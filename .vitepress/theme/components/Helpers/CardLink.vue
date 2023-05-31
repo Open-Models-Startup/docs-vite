@@ -1,35 +1,35 @@
 <script setup lang="ts">
-  import CardSingle from '@theme/components/CardLists/CardSingle.vue';
-  import type { CardLinkType } from '@theme/data/community-projects';
+import CardSingle from '@theme/components/CardLists/CardSingle.vue';
+import type { CardLinkType } from '@theme/data/community-projects';
 
-  defineProps<{
-    body?: string;
-    href: string;
-    imgSrc?: string
-    title?: string;
-    type?: CardLinkType;
-  }>();
+defineProps<{
+  body?: string;
+  href: string;
+  imgSrc?: string;
+  title?: string;
+  type?: CardLinkType;
+}>();
 </script>
 <script lang="ts">
 export default {
   data() {
     return {
-      iconImg: this.getIconImgFromType(this.type)
-    }
+      iconImg: this.getIconImgFromType(this.type),
+    };
   },
   methods: {
     getIconImgFromType(type: CardLinkType | undefined) {
       if (!type) return undefined;
-      const imgUrls: {[icon in CardLinkType]: string} = {
+      const imgUrls: { [icon in CardLinkType]: string } = {
         article: '/icons/fa-newspaper-regular.svg',
         podcast: '/icons/fa-podcast-solid.svg',
         repositoryGithub: '/icons/fa-github.svg',
-        video: '/icons/fa-youtube.svg'
-      }
+        video: '/icons/fa-youtube.svg',
+      };
       return `url('${imgUrls[type]}')`;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <template>
@@ -39,18 +39,21 @@ export default {
         <div
           class="icon"
           :class="
-            imgSrc && 'has-bg',
-            (!imgSrc && (!title || !body)) && 'small',
+            (imgSrc && 'has-bg',
+            !imgSrc && (!title || !body) && 'small',
             type === 'video' && 'is-video',
-            (type === 'podcast') && 'is-podcast',
-            (type === 'repositoryGithub') && 'is-repositoryGithub'
+            type === 'podcast' && 'is-podcast',
+            type === 'repositoryGithub' && 'is-repositoryGithub')
           "
           :style="{
             '--icon-img': iconImg,
             backgroundImage: imgSrc && `url('${imgSrc}`,
           }"
         />
-        <div class="content" :class="(type === 'podcast' || type === 'repositoryGithub') && 'is-small'">
+        <div
+          class="content"
+          :class="(type === 'podcast' || type === 'repositoryGithub') && 'is-small'"
+        >
           <span v-if="title" class="title" :class="!body && 'solo'">{{ title }}</span>
           <span class="body" :class="!title && 'no-title'">{{ body }}</span>
         </div>
@@ -89,9 +92,9 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   :root.dark &.has-bg {
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.4);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
   }
-  
+
   &.has-bg {
     min-width: 152px;
     width: 152px;
@@ -103,7 +106,7 @@ export default {
     height: 64px;
     &:not(.has-bg)::before {
       -webkit-mask-size: 32px;
-              mask-size: 32px;
+      mask-size: 32px;
     }
   }
 
@@ -121,13 +124,13 @@ export default {
     transition: background-color 0.14s ease;
     background-color: var(--vp-c-text-3);
     -webkit-mask-image: var(--icon-img);
-            mask-image: var(--icon-img);
+    mask-image: var(--icon-img);
     -webkit-mask-position: center;
-            mask-position: center;
+    mask-position: center;
     -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
     -webkit-mask-size: var(--icon-mask-size);
-            mask-size: var(--icon-mask-size);
+    mask-size: var(--icon-mask-size);
     .card-body:hover & {
       background-color: var(--vp-c-text-2);
     }
@@ -136,7 +139,7 @@ export default {
   &.has-bg.is-repositoryGithub::before,
   &.has-bg.is-video::before {
     --icon-mask-size: 44px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 99;
     .card-body:hover & {
       background-color: #fff;
@@ -150,7 +153,7 @@ export default {
     height: 48px;
     &::before {
       -webkit-mask-size: 28px;
-              mask-size: 28px;
+      mask-size: 28px;
     }
   }
   &.is-podcast.small,

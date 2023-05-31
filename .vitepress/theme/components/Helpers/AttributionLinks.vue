@@ -1,10 +1,10 @@
 <script setup lang="ts">
-  import type { Person } from '@theme/data/people';
-  import AttributionLink from '@theme/components/Helpers/AttributionLink.vue';
+imimport AttributionLink from '@theme/components/Helpers/AttributionLink.vue';
+import type { Person } from '@theme/data/people';
 
-  defineProps<{
-    attributions: Person[];
-  }>();
+defineProps<{
+  attributions: Person[];
+}>();
 </script>
 
 <template>

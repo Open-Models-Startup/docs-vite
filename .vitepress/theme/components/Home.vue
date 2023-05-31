@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Footer from './Footer.vue';
 import CardGrid from './CardGrid.vue';
+import Footer from './Footer.vue';
 import HomeIntro from './HomeIntro.vue';
 
 defineProps<{

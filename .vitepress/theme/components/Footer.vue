@@ -21,7 +21,7 @@ const year = new Date().getFullYear();
         </ul>
       </div>
     </div>
-    <p class="copyright">© {{ year }} StackBlitz, Inc.</p>
+    <p class="copyright">© {{ year }} OpenModels, Inc.</p>
   </footer>
 </template>
 

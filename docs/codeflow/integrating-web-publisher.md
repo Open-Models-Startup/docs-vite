@@ -3,7 +3,7 @@ title: &title Web Publisher docs integration
 description: &description This page covers integrating Web Publisher into your docs to lower the barrier for contributing to documentations.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/integrating-web_publisher.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/integrating-web_publisher.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -20,11 +20,11 @@ Web Publisher features a **preview that live updates** as you introduce your edi
 
 <img lang="en" src="./assets/wp-whole.png" alt="Web Publisher" style="width: 600px"/>
 
-All you need to edit the docs in Web Publisher is a StackBlitz account.
+All you need to edit the docs in Web Publisher is a OpenModels account.
 
 ## Modifying multiple files
 
-Web Publisher allows you to edit a single page. 
+Web Publisher allows you to edit a single page.
 
 However, some edits require modifying a few files. In this case, you can switch to the Codeflow IDE environment, which will run the whole repository.
 
@@ -40,16 +40,16 @@ This section will guide you step by step through integrating Web Publisher to yo
 
 ### 1. Repo compatibility check
 
-Before you begin, verify your toolchain works in WebContainers. To do this, add `pr.new` to the beginning of your docs repository GitHub URL. 
+Before you begin, verify your toolchain works in WebContainers. To do this, add `pr.new` to the beginning of your docs repository GitHub URL.
 
 :::info Example
-This is the GitHub address of the StackBlitz docs repo:
+This is the GitHub address of the OpenModels docs repo:
 
-`https://github.com/stackblitz/docs/`
+`https://github.com:Open-Models-Startup/docs-vite/`
 
 To check if this repo runs in WebContainers, we'll add `pr.new` to the beginning of the URL:
 
-`https://pr.new/github.com/stackblitz/docs/`
+`https://pr.new/github.com/Open-Models-Startup/docs-vite/`
 :::
 
 If you see that **the preview loads correctly** (see below), this means that your dev server runs properly in WebContainers and your repo is compatible.
@@ -63,24 +63,23 @@ Let's compose a URL that will specify which file the Web Publisher should featur
 :::tip Web Publisher link generator
 Alternatively, you can use the **Web Publisher link generator** to compose your link:
 
-<iframe src="https://stackblitz.com/edit/vue-c2wltp?embed=1&file=src/App.vue&hideExplorer=1&hideNavigation=1&view=preview&ctl=1" style="width:100%;height:450px;border:1px solid var(--vp-custom-block-tip-border);border-radius:10px"></iframe>
+<iframe src="https://openmodels.wiki/edit/vue-c2wltp?embed=1&file=src/App.vue&hideExplorer=1&hideNavigation=1&view=preview&ctl=1" style="width:100%;height:450px;border:1px solid var(--vp-custom-block-tip-border);border-radius:10px"></iframe>
 :::
 
 Web Publisher links follow this pattern:
 
-
 `https://pr.new/github.com/{repo-owner's-username}/{repo}/edit/{branch}/{file-path-in-the-repo}`
-
 
 For example, here is a Web Publisher link to our docs page:
 
-`https://pr.new/github.com/stackblitz/docs/edit/main/docs/guides/user-guide/what-is-stackblitz.md`
+`https://pr.new/github.com/Open-Models-Startup/docs-vite/edit/main/docs/guides/user-guide/what-is-OpenModels.md`
 
 ### Customize the link
-Now that you have the base link, you can further **customize user experience with query parameters**. 
+
+Now that you have the base link, you can further **customize user experience with query parameters**.
 
 :::info
-To specify the first parameter, add `?` at the end of the base link. Connect the subsequent ones with `&`. 
+To specify the first parameter, add `?` at the end of the base link. Connect the subsequent ones with `&`.
 :::
 
 ### `initialPath`
@@ -88,7 +87,7 @@ To specify the first parameter, add `?` at the end of the base link. Connect the
 <p>
     <b>Default behavior:</b> the Preview window renders the homepage as not always the file path or file name is the same as the rendered route.<br/>
     <b>Argument:</b> A route to be rendered.<br/>
-    <b>Example:</b> <code>initialPath=guides/user-guide/what-is-stackblitz</code><br/>
+    <b>Example:</b> <code>initialPath=guides/user-guide/what-is-OpenModels</code><br/>
 </p>
 
 ### `view`
@@ -113,7 +112,7 @@ To enable edits on the sites created via generators, you need to change the defa
 
 ## "Edit in Web Publisher" button
 
-To help your users easily find their way to Web Publisher on your site or repo, you can add a CTA (call-to-action) button on your website or in the README file. 
+To help your users easily find their way to Web Publisher on your site or repo, you can add a CTA (call-to-action) button on your website or in the README file.
 
 | Button preview | Direct URL |
 | --- | --- |

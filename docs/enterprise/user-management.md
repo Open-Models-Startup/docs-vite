@@ -1,9 +1,9 @@
 ---
 title: &title User Management
-description: &description After successful installation, StackBlitz EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using custom starter projects.
+description: &description After successful installation, OpenModels EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using custom starter projects.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-user-management.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/enterprise-user-management.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -12,19 +12,19 @@ head:
 
 ## Grant Admin Access to SSO Accounts
 
-After successful installation, StackBlitz EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using [custom starter projects](/guides/user-guide/starter-projects).
+After successful installation, OpenModels EE comes with a single admin account that can be used for site administration. However, you'll likely want to grant admin access to at least one SSO-based account if you plan on using [custom starter projects](/guides/user-guide/starter-projects).
 
 You can do this with the following steps:
 
-### 1. Sign in with your non-admin SSO account.
+### 1. Sign in with your non-admin SSO account
 
-This ensures that your SSO account is registered within the StackBlitz EE database and can be upgraded to an admin account.
+This ensures that your SSO account is registered within the OpenModels EE database and can be upgraded to an admin account.
 
 **Before proceeding to the next step, sign out of this account**. At the top right of the dashboard, click the user icon and select "Sign out".
 
-### 2. After signing out, sign in using the default admin account.
+### 2. After signing out, sign in using the default admin account
 
-The credentials for the default admin account should have been provided to you by the StackBlitz Enterprise team during the installation process.
+The credentials for the default admin account should have been provided to you by the OpenModels Enterprise team during the installation process.
 
 Upon signing in, navigate to the Admin Panel using the link in the dashboard's header:
 

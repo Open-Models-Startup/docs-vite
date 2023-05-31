@@ -1,9 +1,9 @@
 ---
 title: &title SDK Options Reference
-description: &description Modify your StackBlitz project with SDK options.
+description: &description Modify your OpenModels project with SDK options.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-options-reference.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/sdk-options-reference.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -12,7 +12,7 @@ head:
 
 ## <var>Project</var> {#project}
 
-An object defining the contents and settings of a StackBlitz project.
+An object defining the contents and settings of a OpenModels project.
 
 | Property | Required |  Type | Description |
 | --- | --- | --- | --- |
@@ -85,20 +85,20 @@ Display options available when opening a project in a new window.
 :::tip DEMO
 Check this demo showcasing all available open options:
 
-- [TypeScript demo](https://stackblitz.com/edit/sdk-open-embed-sb-projects-with-openoptions-ts)
-- [JavaScript demo](https://stackblitz.com/edit/sdk-open-embed-sb-projects-with-openoptions-js)
+- [TypeScript demo](https://openmodels.wiki/edit/sdk-open-embed-sb-projects-with-openoptions-ts)
+- [JavaScript demo](https://openmodels.wiki/edit/sdk-open-embed-sb-projects-with-openoptions-js)
 :::
 
 | Property | Type | Description | Default Value |
 | --- | --- | --- | --- |
 | `clickToLoad` | Boolean | Shows a UI dialog asking users to run the project. | `false` |
 | `devToolsHeight` | Number | Sets the [Console][ui_docs] height (from `0` to `100`). [EngineBlock][available_env_docs] only. | - |
-| `forceEmbedLayout` | Boolean | Whether to use the embed layout or the full editor layout. *This option is deprecated and will be removed in a future release.* | `false` |
+| `forceEmbedLayout` | Boolean | Whether to use the embed layout or the full editor layout. _This option is deprecated and will be removed in a future release._ | `false` |
 | `hideDevTools` | Boolean | Hides the [Console][ui_docs] completely. [EngineBlock][available_env_docs] only. | `false` |
 | `hideExplorer` | Boolean | Hides the [ActivityBar][ui_docs]. | `false` |
 | `newWindow` | Boolean | Opens the project in a new tab. | `true` |
 | `openFile` | [OpenFileOption][] (String or Array) | Specifies which file(s) to open in the editor and code lines to highlight. | - |
-| `origin` | String | StackBlitz Enterprise Edition: sets the origin URL of the StackBlitz EE instance. | - |
+| `origin` | String | OpenModels Enterprise Edition: sets the origin URL of the OpenModels EE instance. | - |
 | `showSidebar` | Boolean | Shows the [Sidebar][ui_docs] as open (`true`) or closed (`false`) on page load. | - |
 | `terminalHeight` | Number | Sets the [Terminal][ui_docs] height (from `0` to `100`). [WebContainers][available_env_docs] only. | `30` |
 | `theme` | [UiThemeOption][] (String) | Sets the desired color theme. | see [UiThemeOption][] |
@@ -111,21 +111,21 @@ Display options available when embedding a project in an iframe.
 :::tip DEMO
 Check this demo showcasing all available embed options:
 
-- [TypeScript demo](https://stackblitz.com/edit/sdk-open-embed-sb-projects-with-embedoptions-ts)
-- [JavaScript demo](https://stackblitz.com/edit/sdk-open-embed-sb-projects-with-embedoptions-js)
+- [TypeScript demo](https://openmodels.wiki/edit/sdk-open-embed-sb-projects-with-embedoptions-ts)
+- [JavaScript demo](https://openmodels.wiki/edit/sdk-open-embed-sb-projects-with-embedoptions-js)
 :::
 
 | Property | Type | Description | Default Value |
 | --- | --- | --- | --- |
 | `clickToLoad` | Boolean | Shows a UI dialog asking users to run the project. | `false` |
 | `devToolsHeight` | Number | Sets [Console][ui_docs] height (from `0` to `100`). [EngineBlock][available_env_docs] only. | - |
-| `forceEmbedLayout` | Boolean | Whether to use the embed layout or the full editor layout. *This option is deprecated and will be removed in a future release.* | `true` |
+| `forceEmbedLayout` | Boolean | Whether to use the embed layout or the full editor layout. _This option is deprecated and will be removed in a future release._ | `true` |
 | `height` | Number | Sets the height of the embed iframe. | `300` |
 | `hideDevTools` | Boolean | Hides the [Console][ui_docs] completely. [EngineBlock][available_env_docs] only. | `false` |
 | `hideExplorer` | Boolean | Hides the [ActivityBar][ui_docs]. | `false` |
 | `hideNavigation` | Boolean | Hides the preview URL in embeds. | `false` |
 | `openFile` | [OpenFileOption][] (String or Array) | Specifies which file(s) to open in the editor and code lines to highlight. | - |
-| `origin` | String | StackBlitz Enterprise Edition: sets the origin URL of the StackBlitz EE instance. | - |
+| `origin` | String | OpenModels Enterprise Edition: sets the origin URL of the OpenModels EE instance. | - |
 | `showSidebar` | Boolean | Shows the [Sidebar][ui_docs] as open (`true`) or closed (`false`) on page load. | - |
 | `terminalHeight` | Number | Sets [Terminal][ui_docs] height (from `0` to `100`). [WebContainers][available_env_docs] only. | `30` |
 | `theme` | [UiThemeOption][] (String) | Sets the desired color theme. | see [UiThemeOption][] |
@@ -139,8 +139,8 @@ Specifies file paths to open in the editor. It can be a single string or an arra
 :::tip DEMO
 Check this demo showcasing all available open file options:
 
-- [TypeScript demo](https://stackblitz.com/edit/sdk-openfileoption-ts)
-- [JavaScript demo](https://stackblitz.com/edit/sdk-openfileoption-js)
+- [TypeScript demo](https://openmodels.wiki/edit/sdk-openfileoption-ts)
+- [JavaScript demo](https://openmodels.wiki/edit/sdk-openfileoption-js)
 :::
 
 File paths can include lines of code to be highlighted, using the format `{path}:L{start}` for a single line and `{path}:L{start}-L{end}` for a range. Any file change will remove the highlight selection.
@@ -215,10 +215,7 @@ This only declares an _intent_, and the available values may behave differently 
 [available_env_docs]: /guides/user-guide/available-environments
 [ui_docs]:  /guides/user-guide/ide-whats-on-your-screen
 
-[embedoptions]: #embedoptions
 [openfileoption]: #openfileoption
-[openoptions]: #openoptions
-[project]: #project
 [projectdependencies]: #projectdependencies
 [projectfiles]: #projectfiles
 [projectsettings]: #projectsettings

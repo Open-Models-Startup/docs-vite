@@ -3,7 +3,7 @@ title: &title WebContainer API
 description: &description WebContainer API allows for running WebContainers headlessly.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-api.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/webcontainer-api.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -16,6 +16,6 @@ head:
 
 Head over to the [WebContainers docs](https://webcontainers.io) to learn more, see the API reference, follow tutorials, reference the commercial use case - or, try it out yourself with this minimalistic starter:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://webcontainer.new)
+[![Open in OpenModels](https://openmodels.wiki/img/open_in_OpenModels.svg)](https://webcontainer.new)
 
 We're excited to see what you'll build!

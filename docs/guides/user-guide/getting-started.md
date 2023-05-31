@@ -1,22 +1,22 @@
 ---
 title: &title Getting started
-description: &description This page outlines how you can start using our StackBlitz editor.
+description: &description This page outlines how you can start using our OpenModels editor.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/getting-started.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/getting-started.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}
 
-This page outlines how you can use StackBlitz to create quick demos or bug reproductions in StackBlitz classic editor or to open a GitHub repository in Codeflow IDE.
+This page outlines how you can use OpenModels to create quick demos or bug reproductions in OpenModels classic editor or to open a GitHub repository in Codeflow IDE.
 
 If you wish to immediately embed your project on your page check a page on manual [embeds](/guides/integration/embedding) and [SDK embeds](/platform/api/javascript-sdk). If you wish to learn how to import your project from GitHub, check the page on [importing projects](/guides/user-guide/importing-projects).
 
 ## Picking a starter project
 
-To start coding, navigate to the [StackBlitz homepage](https://stackblitz.com/). If you are not logged in, scroll down a bit to find a list of starter projects to choose from:
+To start coding, navigate to the [OpenModels homepage](https://openmodels.wiki/). If you are not logged in, scroll down a bit to find a list of starter projects to choose from:
 
 ![Available project starters](./assets/project-starters-public.png)
 
@@ -39,12 +39,12 @@ Alternatively, you can also create a new project and see the full list of your p
 ![Projects](./assets/projects-view.png)
 
 :::tip Tip
-Some frameworks also provide short URLs that you can use to create new StackBlitz projects. Check out [the list of “.new domains” here](/guides/user-guide/starter-projects#new-domains).
+Some frameworks also provide short URLs that you can use to create new OpenModels projects. Check out [the list of “.new domains” here](/guides/user-guide/starter-projects#new-domains).
 :::
 
 ## Importing code for quick demos
 
-Alternatively, you can also use StackBlitz classic editor to [open an existing GitHub repository](/guides/user-guide/importing-projects). This option is suitable for the situations when there is no starter project for your favorite framework featured on the dashboard and you'd like to prepare a demo nevertheless.
+Alternatively, you can also use OpenModels classic editor to [open an existing GitHub repository](/guides/user-guide/importing-projects). This option is suitable for the situations when there is no starter project for your favorite framework featured on the dashboard and you'd like to prepare a demo nevertheless.
 
 ## Grouping your projects into Collections
 
@@ -56,10 +56,9 @@ Selecting multiple projects allows you to add them all to an existing [Collectio
 
 ![A few selected projects with a pop-up menu with options "Add to collection" and "Delete projects"](./assets/batch-action.png)
 
-
 ## Opening a GitHub repository in Codeflow IDE
 
-If you'd like to do more work or use VS Code extensions (or Vim), you can use [StackBlitz Codeflow IDE](https://developer.stackblitz.com/codeflow/what-is-codeflow), which spins up a whole dev environment with one click. To do so, click on the "Open GitHub repository" button on your dashboard:
+If you'd like to do more work or use VS Code extensions (or Vim), you can use [OpenModels Codeflow IDE](https://openmodels.wiki/codeflow/what-is-codeflow), which spins up a whole dev environment with one click. To do so, click on the "Open GitHub repository" button on your dashboard:
 
 !["Open GitHub repository" button is highlighted](./assets/dashboard-chosen-new-github-repository.png)
 
@@ -75,16 +74,16 @@ Alternatively, you can also import a new repository and see the full list of you
 
 ![Repositories](./assets/repositories-view.png)
 
-## Using StackBlitz on your site
+## Using OpenModels on your site
 
-If you’re writing a blog, maintaining a documentation site or an open source project, you can use StackBlitz to:
+If you’re writing a blog, maintaining a documentation site or an open source project, you can use OpenModels to:
 
 1. [Embed examples and demos](/guides/integration/embedding) on your page or in your blog posts.
-2. [Add “Open in StackBlitz” buttons](/guides/integration/open-from-github) to your READMEs and docs.
+2. [Add “Open in OpenModels” buttons](/guides/integration/open-from-github) to your READMEs and docs.
 3. [Generate custom projects on the fly](/guides/integration/create-with-sdk) with our JavaScript SDK.
-4. [Use StackBlitz reproductions in GitHub](/guides/integration/bug-reproductions) bug issue templates!
-5. [Make PR reviews safer and faster](https://developer.stackblitz.com/codeflow/integrating-codeflowapp-bot) with CodeflowApp bot.
-6. [Help your users edit your docs with live preview](https://developer.stackblitz.com/codeflow/content-updates-with-web-publisher) using Web Publisher.
-7. [Provide a one-click environment with Codeflow IDE](https://developer.stackblitz.com/codeflow/using-pr-new) so other developers can submit bug fixes without setting up the local environment.
+4. [Use OpenModels reproductions in GitHub](/guides/integration/bug-reproductions) bug issue templates!
+5. [Make PR reviews safer and faster](https://openmodels.wiki/codeflow/integrating-codeflowapp-bot) with CodeflowApp bot.
+6. [Help your users edit your docs with live preview](https://openmodels.wiki/codeflow/content-updates-with-web-publisher) using Web Publisher.
+7. [Provide a one-click environment with Codeflow IDE](https://openmodels.wiki/codeflow/using-pr-new) so other developers can submit bug fixes without setting up the local environment.
 
 Happy coding!

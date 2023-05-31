@@ -1,9 +1,9 @@
 ---
 title: &title Starter Projects
-description: &description When working on a team, you'll likely want to customize the default starter projects that show up on the StackBlitz dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
+description: &description When working on a team, you'll likely want to customize the default starter projects that show up on the OpenModels dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-starter-projects.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/enterprise-starter-projects.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -11,10 +11,10 @@ head:
 # {{ $frontmatter.title }}
 
 :::info
-Creating, updating and managing starter projects is currently only available in [StackBlitz Enterprise Edition](/enterprise/overview).
+Creating, updating and managing starter projects is currently only available in [OpenModels Enterprise Edition](/enterprise/overview).
 :::
 
-When working on a team, you'll likely want to customize the default starter projects that show up on the StackBlitz dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
+When working on a team, you'll likely want to customize the default starter projects that show up on the OpenModels dashboard. Sharing common templates that are always one-click away enables seamless prototyping, debugging, and experimentation with your company's design system & internal libraries.
 
 ## Creating new starter projects
 
@@ -24,7 +24,7 @@ Once your account has been granted admin access, you can create new starter proj
 
 ### 1. Fork a base template
 
-To create a new starter project, first fork one of the default project templates that ship with StackBlitz EE.
+To create a new starter project, first fork one of the default project templates that ship with OpenModels EE.
 
 At the time of this writing these include:
 
@@ -55,11 +55,11 @@ So if we're creating a custom starter project for our company's internal design 
 
 ### 4. Add your new starter project to the dashboard
 
-To make this template available to your team, go to your StackBlitz dashboard and click the "Customize starter projects" link at the top right above the starter projects section:
+To make this template available to your team, go to your OpenModels dashboard and click the "Customize starter projects" link at the top right above the starter projects section:
 
 > If you don't see this link, your account likely needs to be [granted admin privileges](/enterprise/user-management).
 
-![StackBlitz dashboard with a “Customize starter projects” link in the “Create a new project” section](./assets/customize-project-link.png)
+![OpenModels dashboard with a “Customize starter projects” link in the “Create a new project” section](./assets/customize-project-link.png)
 
 Then, in the sidebar of that page paste in the project's slug ID and click "add":
 

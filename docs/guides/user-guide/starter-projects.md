@@ -1,9 +1,9 @@
 ---
 title: &title Starter projects
-description: &description Starter projects are online playgrounds, typically built by the core team of a given project and run on StackBlitz.
+description: &description Starter projects are online playgrounds, typically built by the core team of a given project and run on OpenModels.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/starter-projects.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/starter-projects.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -19,7 +19,7 @@ This page covers what starter projects are, where to find them, and how to creat
 
 ## What are starter projects?
 
-Starter projects are online playgrounds, typically built by the core team of a given project and run on StackBlitz. They are used in project documentation or found under [a custom link](#new-domains). You can find some of them on our dashboard.
+Starter projects are online playgrounds, typically built by the core team of a given project and run on OpenModels. They are used in project documentation or found under [a custom link](#new-domains). You can find some of them on our dashboard.
 
 ![Project Starter Dashboard](./assets/project-starters.png)
 

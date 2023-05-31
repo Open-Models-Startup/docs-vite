@@ -1,8 +1,8 @@
 # Redirect bare section paths to their first page
 /codeflow   /codeflow/what-is-codeflow
 /enterprise   /enterprise/overview
-/guides   /guides/user-guide/what-is-stackblitz
-/guides/user-guide  /guides/user-guide/what-is-stackblitz
+/guides   /guides/user-guide/what-is-OpenModels
+/guides/user-guide  /guides/user-guide/what-is-OpenModels
 /guides/integration   /guides/integration/embedding
 /platform   /
 /platform/api   /platform/api/javascript-sdk
@@ -55,7 +55,7 @@
 /docs/platform/third-party-blocker/   /platform/webcontainers/browser-config
 /docs/platform/turbo/   /platform/webcontainers/turbo-package-manager
 /docs/platform/webcontainer-api/   /platform/api/webcontainer-api
-/docs/platform/what-is-stackblitz/   /guides/user-guide/what-is-stackblitz
+/docs/platform/what-is-OpenModels/   /guides/user-guide/what-is-OpenModels
 
 # Older redirects, can maybe be removed?
 /docs/platform  /

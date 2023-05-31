@@ -11,7 +11,9 @@ defineProps<{
   <div class="attribution-link">
     <CardSingle :href="attribution.href" size="small">
       <div class="content-body">
-        <div v-if="attribution.imgPath" class="avatar"
+        <div
+          v-if="attribution.imgPath"
+          class="avatar"
           :style="{ backgroundImage: attribution.imgPath && `url('${attribution.imgPath}` }"
         />
         <span class="name">{{ attribution.name }}</span>
@@ -39,7 +41,7 @@ defineProps<{
   height: 20px;
   margin-left: -6px;
   border-radius: 50%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +53,6 @@ defineProps<{
   font-weight: 600;
   transition: ease 0.1s color;
 }
-
 
 .attribution-link {
   padding: 1px;

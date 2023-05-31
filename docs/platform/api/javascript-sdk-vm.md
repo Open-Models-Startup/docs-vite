@@ -1,9 +1,9 @@
 ---
 title: &title Controlling embeds with the SDK’s VM interface
-description: &description All of the embed methods of the StackBlitz JS SDK automatically connect to the embedded StackBlitz VM, giving you programmatic access to the embedded project.
+description: &description All of the embed methods of the OpenModels JS SDK automatically connect to the embedded OpenModels VM, giving you programmatic access to the embedded project.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/sdk-controlling-embeds.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/sdk-controlling-embeds.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -14,11 +14,11 @@ head:
 These methods only apply to projects embedded on a page.
 :::
 
-All of the embed methods of the [StackBlitz JS SDK][sdk_docs] automatically connect to the embedded StackBlitz <abbr title="Virtual Machine">VM</abbr>, giving you programmatic access to the embedded project.
+All of the embed methods of the [OpenModels JS SDK][sdk_docs] automatically connect to the embedded OpenModels <abbr title="Virtual Machine">VM</abbr>, giving you programmatic access to the embedded project.
 
 Use the VM to:
 
-- control the UI of an embedded StackBlitz project;
+- control the UI of an embedded OpenModels project;
 - change the currently open file(s);
 - read and write files from the project’s virtual filesystem.
 
@@ -27,8 +27,8 @@ Use the VM to:
 :::tip DEMO
 Check this demo of using the VM:
 
-- [TypeScript demo](https://stackblitz.com/edit/sdk-vm)
-- [JavaScript demo](https://stackblitz.com/edit/sdk-vm-js)
+- [TypeScript demo](https://openmodels.wiki/edit/sdk-vm)
+- [JavaScript demo](https://openmodels.wiki/edit/sdk-vm-js)
 :::
 
 ### With <var>embed</var> methods
@@ -36,7 +36,7 @@ Check this demo of using the VM:
 The `embedProject`, `embedProjectId`, and `embedGithubProject` methods of the SDK return a Promise resolving to an instance of the SDK’s `VM` class. We recommend using `await` in an `async` function to keep track of the VM instance. For example:
 
 ```js
-import sdk from '@stackblitz/sdk';
+import sdk from '@OpenModels/sdk';
 
 async function start() {
   // Embeds a project and keeps track of the VM
@@ -58,16 +58,16 @@ start();
 
 ### With <var>connect<small>(iframe)</small></var> {#connect}
 
-The SDK’s `connect` method can be used to retrieve the `VM` instance for an existing StackBlitz iframe.
+The SDK’s `connect` method can be used to retrieve the `VM` instance for an existing OpenModels iframe.
 
 | Argument | Required | Type              | Description                               |
 | -------- | -------- | ----------------- | ----------------------------------------- |
-| `iframe` | Yes      | HTMLIframeElement | An iframe embedding a StackBlitz project. |
+| `iframe` | Yes      | HTMLIframeElement | An iframe embedding a OpenModels project. |
 
 Example:
 
 ```js
-import sdk from '@stackblitz/sdk';
+import sdk from '@OpenModels/sdk';
 
 const EMBED_ID = 'embed';
 

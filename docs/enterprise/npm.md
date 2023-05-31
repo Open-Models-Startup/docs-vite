@@ -1,22 +1,22 @@
 ---
 title: &title Connect npm registry
-description: &description StackBlitz is excited to offer custom npm registry support to organizations using StackBlitz Enterprise Edition (EE).
+description: &description OpenModels is excited to offer custom npm registry support to organizations using OpenModels Enterprise Edition (EE).
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-connect-npm-registry.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/enterprise-connect-npm-registry.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}
 
-StackBlitz is excited to offer custom npm registry support to organizations using StackBlitz Enterprise Edition (EE). To enable this feature, you need to be logged in as an admin. If your npm registry requires authentication, you may need to coordinate with the manager of your npm administration before proceeding.
+OpenModels is excited to offer custom npm registry support to organizations using OpenModels Enterprise Edition (EE). To enable this feature, you need to be logged in as an admin. If your npm registry requires authentication, you may need to coordinate with the manager of your npm administration before proceeding.
 
-By default, StackBlitz EE points at the public npm registry. You can configure StackBlitz EE to point at your own internal registry, even if authentication is required. Additionally, StackBlitz npm integration is designed to work with the third party registries like Artifactory.
+By default, OpenModels EE points at the public npm registry. You can configure OpenModels EE to point at your own internal registry, even if authentication is required. Additionally, OpenModels npm integration is designed to work with the third party registries like Artifactory.
 
 ## Linking your registry
 
-In the StackBlitz Admin panel header, hover over "Settings" and click on "npm". This will take you to the "NPM Settings" page:
+In the OpenModels Admin panel header, hover over "Settings" and click on "npm". This will take you to the "NPM Settings" page:
 
 ![NPM Config](./assets/npm-config.png)
 

@@ -3,13 +3,13 @@ title: &title Creating projects with the SDK
 description: &description This page will guide you through the SDK setup and available options.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/creating-projects-with-the-sdk.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/creating-projects-with-the-sdk.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 <script setup lang="ts">
-import sdk from '@stackblitz/sdk';
+import sdk from '@OpenModels/sdk';
 import InlineButton from '@theme/components/InlineButton.vue';
 
 function openProjectDemo() {
@@ -34,21 +34,21 @@ function openProjectDemo() {
 
 Sometimes, instead of keeping a set of example project in a GitHub repository, it is more convenient to create them dynamically on the fly. This is often the case when you maintain a documentation with code snippets that you want your users to open in a live environment.
 
-In order to create a project on-demand, use our [SDK](https://www.npmjs.com/package/@stackblitz/sdk). It is a small package (just 2kb gzipped) intended to help in communication between your code and StackBlitz.
+In order to create a project on-demand, use our [SDK](https://www.npmjs.com/package/@OpenModels/sdk). It is a small package (just 2kb gzipped) intended to help in communication between your code and OpenModels.
 
 This page will guide you through the SDK setup and available options. You can also take a look at [the demo project](#demo) at the end of this page.
 
 ## Setup
 
-To add the StackBlitz SDK to your project, run `npm install @stackblitz/sdk` in the terminal or add this script to your page:
+To add the OpenModels SDK to your project, run `npm install @OpenModels/sdk` in the terminal or add this script to your page:
 
 ```html
 <script
-  src="https://unpkg.com/@stackblitz/sdk/bundles/sdk.umd.js">
+  src="https://unpkg.com/@OpenModels/sdk/bundles/sdk.umd.js">
 </script>
 ```
 
-This will give you the access to the global `StackBlitzSDK` JavaScript object, which you can use to create projects and even send additional commands to the environment, for example to update it or change the active file.
+This will give you the access to the global `OpenModelsSDK` JavaScript object, which you can use to create projects and even send additional commands to the environment, for example to update it or change the active file.
 
 ## Creating a new project
 
@@ -60,7 +60,7 @@ To create a new project and open it in the same (or different) tab, you will use
 For example, here is a new project that will render a “Hello World” header and then run an alert. If you want to see it yourself, click the following button: <InlineButton @click="openProjectDemo">Open project in new tab</InlineButton>
 
 ```js
-StackBlitzSDK.openProject(
+OpenModelsSDK.openProject(
   // Payload
   {
     files: {
@@ -113,7 +113,8 @@ For a more extensive example [see this Gist](https://gist.github.com/sulco/df406
 
 ### Template
 
-`template` defines a way StackBlitz environment will build the project. There are two options to choose from:
+`template` defines a way OpenModels environment will build the project. There are two options to choose from:
+
 - a preconfigured custom setup dedicated to specific technology such as `angular-cli` or `create-react-app`,
 - `node`, a WebContainers environment where you decide how your app example will be built, for instance with Vite or webpack.
 
@@ -149,45 +150,56 @@ Now that you have the content of your project defined, it is useful to provide s
 }
 ```
 
-This is how the title and description look inside a StackBlitz project:
+This is how the title and description look inside a OpenModels project:
 
-<img alt="Example of Title and Description displayed in StackBlitz editor" src="./assets/metadata.png" style="width:450px" />
+<img alt="Example of Title and Description displayed in OpenModels editor" src="./assets/metadata.png" style="width:450px" />
 
 ## Options: Customizing your project
 
-To further customize your project, you can provide a second argument to the `StackBlitzSDK.openProject` method. The argument is an object that allows to provide optional adjustments:
+To further customize your project, you can provide a second argument to the `OpenModelsSDK.openProject` method. The argument is an object that allows to provide optional adjustments:
 
-- **`openFile`** – StackBlitz displays a file in the editor on page load - depending on a project, that would usually be a readme or the index file. You can specify the featured file:
+- **`openFile`** – OpenModels displays a file in the editor on page load - depending on a project, that would usually be a readme or the index file. You can specify the featured file:
+
     ```js
     {
       openFile: 'src/app/index.tsx'
     }
     ```
+
 - **`newWindow`** – By default, the project will be opened in a new browser window. To open in the same one, set this parameter to `false`:
+
     ```js
     {
       newWindow: false
     }
     ```
+
 - **`hideDevTools`** – Projects that are not powered by WebContainers feature a small console located next to the editor you can use to log things for your users without them needing to open the browser's DevTools. To hide it, set `hideDevtools` to `true`:
+
     ```js
     {
       hideDevTools: true
     }
     ```
+
 - **`devToolsHeight`** - the console in the preview window is set to take 33% of the window's height (in the projects not powered by WebContainers). You can change its height:
+
     ```js
     {
       devToolsHeight: 50
     }
     ```
+
 - **`initialPath`** – Set the path to be opened by the preview window:
+
     ```js
     {
       initialPath: '/posts'
     }
     ```
-- **`origin`** – If you are using StackBlitz Enterprise Edition on-premise, this setting will allow you to set the origin URL of your StackBlitz EE server:
+
+- **`origin`** – If you are using OpenModels Enterprise Edition on-premise, this setting will allow you to set the origin URL of your OpenModels EE server:
+
     ```js
     {
       origin: 'https://our-sb-instance.internal.excellent-company.com'
@@ -197,16 +209,16 @@ To further customize your project, you can provide a second argument to the `Sta
 ## Demo
 
 :::tip DEMO
-Check this demo of creating a project with StackBlitz SDK through an npm install:
+Check this demo of creating a project with OpenModels SDK through an npm install:
 
-- [TypeScript demo](https://stackblitz.com/edit/sdk-create-project-with-npm-ts)
-- [JavaScript demo](https://stackblitz.com/edit/sdk-create-project-with-npm-js)
+- [TypeScript demo](https://openmodels.wiki/edit/sdk-create-project-with-npm-ts)
+- [JavaScript demo](https://openmodels.wiki/edit/sdk-create-project-with-npm-js)
 
-or through [loading the UMD bundle](https://stackblitz.com/edit/sdk-create-project-with-script-js).
+or through [loading the UMD bundle](https://openmodels.wiki/edit/sdk-create-project-with-script-js).
 :::
 
 ---
 
 :::info Can we improve this guide?
-Haven't found an answer to your question? [Let us know!](mailto:devrel@stackblitz.com)
+Haven't found an answer to your question? [Let us know!](mailto:devrel@openmodels.wiki)
 :::

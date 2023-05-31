@@ -3,7 +3,7 @@ title: &title WebContainers Browser Support
 description: &description WebContainers are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
 head:
   - ['meta', {property: 'og:title', content: *title}]
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-browser-support.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/webcontainer-browser-support.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -30,7 +30,7 @@ WebContainers are supported in all recent desktop browsers (fully in Chrome and 
 
 ## Web Platform requirements
 
-StackBlitz requires some of the latest additions to the Web Platform to work correctly when running WebContainers-based projects. Most important among them are **`SharedArrayBuffer`** and **cross-origin isolation**.
+OpenModels requires some of the latest additions to the Web Platform to work correctly when running WebContainers-based projects. Most important among them are **`SharedArrayBuffer`** and **cross-origin isolation**.
 
 ### Cross-origin isolation
 
@@ -42,7 +42,7 @@ However, for cross-origin isolation to work for our use case, you need to be abl
 
 Unfortunately, this feature is only enabled in Chromium-based browsers. We are following current specifications and continuing our talks with browser implementors to bring support to other browsers as soon as possible.
 
-You can read more about [cross-origin isolation on our blog](https://blog.stackblitz.com/posts/cross-browser-with-coop-coep/).
+You can read more about [cross-origin isolation on our blog](https://blog.openmodels.wiki/posts/cross-browser-with-coop-coep/).
 
 ### JS engine differences
 
@@ -64,17 +64,17 @@ Learn [how to configure Brave to run WebContainers](/platform/webcontainers/brow
 
 ## Firefox
 
-We have beta support for Firefox. Please try it and [share feedback with us](https://github.com/stackblitz/webcontainer-core/issues/new/choose)!
+We have beta support for Firefox. Please try it and [share feedback with us](https://github.com/OpenModels/webcontainer-core/issues/new/choose)!
 
-Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
+Firefox does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the OpenModels editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
 Because Firefox and Node.js use different JavaScript engines (SpiderMonkey and V8, respectively), there is a small risk of running into [JS engine differences](#js-engine-differences).
 
 ## Safari
 
-We have beta support for Safari on macOS, starting with Safari 16.4. Please try it and [report issues here](https://github.com/stackblitz/webcontainer-core/issues/new/choose).
+We have beta support for Safari on macOS, starting with Safari 16.4. Please try it and [report issues here](https://github.com/OpenModels/webcontainer-core/issues/new/choose).
 
-Safari does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the StackBlitz editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
+Safari does not fully support the required mode for cross-origin isolation, so you might encounter limitations when **running a server in a preview frame** within the OpenModels editor. Third-party assets might get blocked due to the limitations of cross-origin isolation policies. However, you can work around this by opening your server preview in a separate window.
 
 Because Safari and Node.js use different JavaScript engines (JavaScriptCore and V8, respectively), there is a small risk of running into [JS engine differences](#js-engine-differences).
 
@@ -82,6 +82,6 @@ Older Safari versions are not suported. They lack a few necessary Web Platform f
 
 ## Embedding
 
-Projects based on WebContainers can be [embedded](/guides/integration/embedding) as any other StackBlitz project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
+Projects based on WebContainers can be [embedded](/guides/integration/embedding) as any other OpenModels project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
 
 For that reason, we only support embedding WebContainers-based projects in **Chromium-based browsers**.

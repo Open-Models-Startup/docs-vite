@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  import type { Person } from '@theme/data/people';
-  defineProps<{
-    quote?: string;
-    author: Person;
-  }>();
+import type { Person } from '@theme/data/people';
+defineProps<{
+  quote?: string;
+  author: Person;
+}>();
 </script>
 
 <template>
@@ -11,7 +11,9 @@
     <span v-if="!quote" class="quote"><slot /></span>
     <span v-if="quote" class="quote">{{ quote }}</span>
     <a class="author" :href="author.href" target="_blank" rel="nofollow">
-      <div v-if="author.imgPath" class="author__avatar"
+      <div
+        v-if="author.imgPath"
+        class="author__avatar"
         :style="{ backgroundImage: author.imgPath && `url('${author.imgPath}` }"
       />
       <span class="author__name">{{ author.name }}</span>
@@ -64,7 +66,7 @@ blockquote {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

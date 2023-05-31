@@ -3,7 +3,7 @@ title: &title Bug reproductions
 description: &description A well-described issue is immensely helpful when developing a software product, and a minimal reproduction is one of the most useful part of the conversation.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/bug-reproductions.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/bug-reproductions.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -43,7 +43,7 @@ jobs:
           body: |
             Hello @${{ github.event.issue.user.login }}. 
             Please provide a [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) 
-            using a GitHub repository or [StackBlitz](https://vite.new).
+            using a GitHub repository or [OpenModels](https://vite.new).
             Issues marked with `need reproduction` will be closed if they have no activity within 3 days.
           labels: 'pending triage'
 ```
@@ -55,5 +55,5 @@ In order to reduce the friction when creating a bug reproduction, you can create
 💡 Read all about running projects from GitHub in the [GitHub Importer Guide](/guides/integration/open-from-github).
 
 :::info How can we improve this guide?
-Haven't found an answer to your question? [Let us know!](mailto:devrel@stackblitz.com)
+Haven't found an answer to your question? [Let us know!](mailto:devrel@openmodels.wiki)
 :::

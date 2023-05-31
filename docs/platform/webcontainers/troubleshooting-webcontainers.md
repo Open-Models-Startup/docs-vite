@@ -3,7 +3,7 @@ title: &title Troubleshooting WebContainers
 description: &description This page helps you troubleshoot issues with WebContainers.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-troubleshooting.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/webcontainer-troubleshooting.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---

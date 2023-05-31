@@ -3,7 +3,7 @@ title: &title POST API
 description: &description Create new projects by POSTing the desired project data from a form. This method is useful when you don't or can't use our JavaScript SDK.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/post-api.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/post-api.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -38,7 +38,7 @@ Below is an example HTML form that generates a project from the RxJS docs using 
 <head></head>
 <body>
 
-<form id="mainForm" method="post" action="https://stackblitz.com/run" target="_self">
+<form id="mainForm" method="post" action="https://openmodels.wiki/run" target="_self">
 <input type="hidden" name="project[files][index.ts]" value="import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/fromEvent';
 import 'rxjs/add/operator/scan';
@@ -63,5 +63,5 @@ Observable.fromEvent(button, 'click')
 ## Demo
 
 :::tip DEMO
-Check this [demo of using POST API to create a project](https://stackblitz.com/edit/sdk-create-via-post-api).
+Check this [demo of using POST API to create a project](https://openmodels.wiki/edit/sdk-create-via-post-api).
 :::

@@ -1,16 +1,16 @@
 ---
 title: &title Keyboard shortcuts
-description: &description A “keyboard shortcut” or “keybinding” is combination of keys on your keyboard which allows you to perform  common actions such as saving a file, modifying the view, or copying a line of code. In the StackBlitz editor this set of shortcuts is predefined and, currently, non-customizable.
+description: &description A “keyboard shortcut” or “keybinding” is combination of keys on your keyboard which allows you to perform  common actions such as saving a file, modifying the view, or copying a line of code. In the OpenModels editor this set of shortcuts is predefined and, currently, non-customizable.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/keyboard-shortcuts.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/keyboard-shortcuts.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}
 
-A “keyboard shortcut” or “keybinding” is combination of keys on your keyboard which allows you to perform  common actions such as saving a file, modifying the view, or copying a line of code. In the StackBlitz editor this set of shortcuts is predefined and, currently, non-customizable.
+A “keyboard shortcut” or “keybinding” is combination of keys on your keyboard which allows you to perform  common actions such as saving a file, modifying the view, or copying a line of code. In the OpenModels editor this set of shortcuts is predefined and, currently, non-customizable.
 
 Choose your platform to see the full list of available shortcuts: [Windows](#windows-keybindings) | [MacOS](#macos-keybindings) | [Linux](#linux-keybindings).
 
@@ -75,7 +75,6 @@ Choose your platform to see the full list of available shortcuts: [Windows](#win
 | `Shift` `F12`                                 | Show References                             |
 | `F2`                                          | Rename Symbol                               |
 | `Ctrl` `K` + `Ctrl` `X`                       | Trim trailing whitespace                    |
-
 
 ## MacOS keybindings
 

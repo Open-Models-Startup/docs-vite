@@ -3,7 +3,7 @@ title: &title Turbo Package Manager
 description: &description WebContainers-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. 
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/webcontainer-turbo-package-manager.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/webcontainer-turbo-package-manager.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -108,7 +108,7 @@ success Updated "package.json"
 success Install finished in 2.132s
 ```
 
-If you run into issues, please submit an issue on [GitHub](https://github.com/stackblitz/webcontainer-core/issues/new?assignees=&labels=&template=bug_report.yml).
+If you run into issues, please submit an issue on [GitHub](https://github.com/OpenModels/webcontainer-core/issues/new?assignees=&labels=&template=bug_report.yml).
 
 ## node-sass
 

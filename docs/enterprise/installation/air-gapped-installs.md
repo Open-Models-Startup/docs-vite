@@ -1,33 +1,33 @@
 ---
 title: &title Air Gapped Installs
-description: &description StackBlitz supports air gapped installations for networks that have restricted outbound network access.
+description: &description OpenModels supports air gapped installations for networks that have restricted outbound network access.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-air-gapped-installs.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/enterprise-installation-air-gapped-installs.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
 
 # {{ $frontmatter.title }}
 
-StackBlitz supports air gapped installations for networks that have restricted outbound network access.
+OpenModels supports air gapped installations for networks that have restricted outbound network access.
 Air gapped installs will not require outbound network access, but application and license updates will need to be applied manually.
 
 ## Installing to an Existing Cluster
 
 For the air gapped installations, you will need:
 
-- the access to a container image registry where images from the air gapped bundled will be mirrored and re-tagged, 
-- an enterprise license with air gapping enabled; contact [enterprise@stackblitz.com](mailto:enterprise@stackblitz.com) if you need one.
+- the access to a container image registry where images from the air gapped bundled will be mirrored and re-tagged,
+- an enterprise license with air gapping enabled; contact [enterprise@openmodels.wiki](mailto:enterprise@openmodels.wiki) if you need one.
 
 ## Downloading Releases for Installation
 
-You will need to download a the following from your StackBlitz Enterprise license page:
+You will need to download a the following from your OpenModels Enterprise license page:
 
-- a StackBlitz Enterprise Edition License,
+- a OpenModels Enterprise Edition License,
 - Kots CLI (if not already installed),
 - Kots Admin Console release that matches the installed Kots CLI version,
-- latest StackBlitz Enterprise release bundle (`.airgap` file).
+- latest OpenModels Enterprise release bundle (`.airgap` file).
 
 If you need to create a support bundle for troubleshooting, you can also download the Support Bundle CLI.
 
@@ -37,7 +37,7 @@ On a workstation that has `kubectl` access to the cluster, run `kubectl kots ver
 curl https://kots.io/install | bash
 ```
 
-or download the latest version from the StackBlitz license download page for an offline version. 
+or download the latest version from the OpenModels license download page for an offline version.
 
 Once `kots` has been installed, run `kubectl kots version` and download the corresponding Kots Admin Console release from the license download page. You should receive a file named `kotsadm.tar.gz`.
 
@@ -46,26 +46,26 @@ Once `kots` has been installed, run `kubectl kots version` and download the corr
 Once you have the `kots` and the matching Admin Console release, run the following command with your container image registry hostname and credentials to mirror the images required to run the Admin Console to your container image registry:
 
 ```sh
-kubectl kots admin-console push-images ./kotsadm.tar.gz your.registry.hostname/your-stackblitz-namespace \
+kubectl kots admin-console push-images ./kotsadm.tar.gz your.registry.hostname/your-OpenModels-namespace \
   --registry-username readwrite-username \
   --registry-password readwrite-password
 ```
 
 :::tip
-If you wish to audit the StackBlitz application images before installing, you may also push the StackBlitz application bundle to your registry now as well by running the `push-images` command again with the StackBlitz bundle instead of the kotsadm bundle (all other options remain the same).
+If you wish to audit the OpenModels application images before installing, you may also push the OpenModels application bundle to your registry now as well by running the `push-images` command again with the OpenModels bundle instead of the kotsadm bundle (all other options remain the same).
 :::
 
 Next, begin the installation process by installing the Admin Console to your cluster, providing the details for your container registry:
 
 ```sh
 kubectl kots install --kotsadm-registry your.registry.hostname \
-  --kotsadm-namespace your-stackblitz-namespace \
+  --kotsadm-namespace your-OpenModels-namespace \
   --registry-username readonly-username \
   --registry-password readonly-password \
-  stackblitz
+  OpenModels
 ```
 
-The installer will prompt for a namespace in which StackBlitz will be installed, and a password for the admin console.
+The installer will prompt for a namespace in which OpenModels will be installed, and a password for the admin console.
 
 ## Providing Your License and Bundle
 
@@ -75,7 +75,7 @@ There are a couple options for providing your license and bundle to your install
 
 After running the `kubectl kots install` command above, the Admin Console will be accessible from `localhost:8800`, and you can provide your license and bundle via the browser. You can re-run `kubectl kots admin-console -n namespace-of-installation` to access the admin console at any time after the installation. Once the Admin panel is up and running, you'll need to provide your license. If your license has air gapping enabled, you will be prompted for read/write registry credentials for mirroring the images from the `.airgap` bundle to your container registry.
 
-If you've already uploaded the StackBlitz air gap bundle, check the box next to "Disable Pushing Images to Registry" to skip the image mirroring step.
+If you've already uploaded the OpenModels air gap bundle, check the box next to "Disable Pushing Images to Registry" to skip the image mirroring step.
 
 ![Air Gap Registry Config](../assets/airgap-installation/kots-docker-screen.png)
 
@@ -92,7 +92,7 @@ Check the [Administrator Guide](/enterprise/installation/administrator-guide#con
 For installations where the browser is unable to provide the license and bundle, the CLI can be used instead. To complete an installation using the license and bundle, run the following command:
 
 :::tip
-If you've already uploaded the StackBlitz application images previously, add the `--disable-image-push` option.
+If you've already uploaded the OpenModels application images previously, add the `--disable-image-push` option.
 :::
 
 ```sh
@@ -103,17 +103,16 @@ kubectl kots install app-name \
   --config-values ./configvalues.yaml \
   --airgap-bundle /path/to/application.airgap \
   --kotsadm-registry your.registry.host \
-  --kotsadm-namespace your-stackblitz-namespace \
+  --kotsadm-namespace your-OpenModels-namespace \
   --registry-username rw-username \
   --registry-password rw-password
 ```
 
-
 If you have already provided your license using the browser, you can use the `kots upstream upgrade` command instead. To extract a new bundle to your registry and upload the release to Admin Console, run the following command:
 
 ```sh
-kubectl kots upstream upgrade stackblitz \
-  --airgap-bundle StackBlitz.airgap \
+kubectl kots upstream upgrade OpenModels \
+  --airgap-bundle OpenModels.airgap \
   --kotsadm-namespace <registry namespace> \
   --kotsadm-registry <registry host> \
   --registry-username <username> \

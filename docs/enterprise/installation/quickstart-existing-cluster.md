@@ -1,9 +1,9 @@
 ---
 title: &title Quickstart (Existing Cluster)
-description: &description StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
+description: &description OpenModels Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/enterprise-installation-quickstart-on-existing-cluster.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/enterprise-installation-quickstart-on-existing-cluster.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -14,11 +14,11 @@ head:
 For an in-depth custom installation setup and cluster operations, please follow **[Administrator Guide](/enterprise/installation/administrator-guide)**.
 :::
 
-StackBlitz Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
+OpenModels Enterprise is a Kubernetes application. You can follow these instructions to install the software on an existing Kubernetes cluster.
 
-Alternatively, if you don't have Kubernetes set up for your organization, you can use our installer that has an embedded production-ready Kubernetes distribution packaged with it. You can view the [Quickstart on Bare Metal](/enterprise/installation/quickstart) for a quick way to get up and running without Kubernetes. Installing on an existing cluster is the recommended way of installing StackBlitz Enterprise.
+Alternatively, if you don't have Kubernetes set up for your organization, you can use our installer that has an embedded production-ready Kubernetes distribution packaged with it. You can view the [Quickstart on Bare Metal](/enterprise/installation/quickstart) for a quick way to get up and running without Kubernetes. Installing on an existing cluster is the recommended way of installing OpenModels Enterprise.
 
-For installing StackBlitz in environments with restricted network access, see [Air-Gapped Installs](/enterprise/installation/air-gapped-installs).
+For installing OpenModels in environments with restricted network access, see [Air-Gapped Installs](/enterprise/installation/air-gapped-installs).
 
 ## Getting started on an Existing Cluster
 
@@ -33,7 +33,7 @@ Minimum Cluster Requirements:
 
 :::info
 If your cluster does not allow access to the external Internet, you will need to perform an [Air-Gapped Install](/enterprise/installation/air-gapped-installs).
-Contact [enterprise@stackblitz.com](mailto:enterprise@stackblitz.com) if you need the air-gapped installations enabled on your license.
+Contact [enterprise@openmodels.wiki](mailto:enterprise@openmodels.wiki) if you need the air-gapped installations enabled on your license.
 :::
 
 Recommended Cluster Requirements:
@@ -51,22 +51,22 @@ Make sure ports the following TCP ports are allowed to the Cluster:
 - 8080
 - 6443
 
-StackBlitz uses [Kots](https://kots.io) to manage the installation, licensing, and delivery of updates. On a machine that has `kubectl` access to the cluster, install the `kots` CLI with the following command:
+OpenModels uses [Kots](https://kots.io) to manage the installation, licensing, and delivery of updates. On a machine that has `kubectl` access to the cluster, install the `kots` CLI with the following command:
 
 ```sh
 curl https://kots.io/install | bash
 ```
 
-Then, install the Admin Console for StackBlitz by running:
+Then, install the Admin Console for OpenModels by running:
 
 ```sh
-kubectl kots install stackblitz
+kubectl kots install OpenModels
 ```
 
-You will be prompted for a namespace in your cluster in which StackBlitz will be installed. By default, the namespace is `stackblitz`. Then Yyu will be prompted to set a password for the Admin Console:
+You will be prompted for a namespace in your cluster in which OpenModels will be installed. By default, the namespace is `OpenModels`. Then Yyu will be prompted to set a password for the Admin Console:
 
 ```sh
-Enter the namespace to deploy to: stackblitz
+Enter the namespace to deploy to: OpenModels
  • Deploying Admin Console
     • Creating namespace ✓
     • Waiting for datastore to be ready ✓
@@ -98,4 +98,4 @@ Drag and drop your license file onto the webpage to upload it. Once this step co
 
 ![EE Console](../assets/ee-console-config.png)
 
-See the [Config Options in the Administrator Guide](/enterprise/installation/administrator-guide#config-options) for more details on each configuration option. After filling out the configuration fields, click "Continue". Your configuration will be saved. The Admin Console will deploy your configuration and begin to pull and run the images for StackBlitz. After your instance is up and running, you will need to [Configure DNS Settings](/enterprise/configuring-dns) to point your DNS zones at the IP/CNAME of your ingress.
+See the [Config Options in the Administrator Guide](/enterprise/installation/administrator-guide#config-options) for more details on each configuration option. After filling out the configuration fields, click "Continue". Your configuration will be saved. The Admin Console will deploy your configuration and begin to pull and run the images for OpenModels. After your instance is up and running, you will need to [Configure DNS Settings](/enterprise/configuring-dns) to point your DNS zones at the IP/CNAME of your ingress.

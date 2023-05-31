@@ -1,9 +1,9 @@
 ---
 title: &title Available environments
-description: &description "There are two kinds of environments that run projects in StackBlitz: EngineBlock and WebContainers. Each project in StackBlitz is tied to one or the other."
+description: &description "There are two kinds of environments that run projects in OpenModels: EngineBlock and WebContainers. Each project in OpenModels is tied to one or the other."
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/available-environments.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/available-environments.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -14,9 +14,9 @@ head:
 
 # {{ $frontmatter.title }}
 
-There are two kinds of environments that run projects in StackBlitz: **EngineBlock** and **WebContainers**. Each project in StackBlitz is tied to one or the other.
+There are two kinds of environments that run projects in OpenModels: **EngineBlock** and **WebContainers**. Each project in OpenModels is tied to one or the other.
 
-Depending on the environment, StackBlitz IDE includes slightly different features and User Interface elements. See an overview of both environments in the table below - or you can directly consult the section on [EngineBlock](#engineblock) or [WebContainers](#webcontainers).
+Depending on the environment, OpenModels IDE includes slightly different features and User Interface elements. See an overview of both environments in the table below - or you can directly consult the section on [EngineBlock](#engineblock) or [WebContainers](#webcontainers).
 
 | Feature | EngineBlock | WebContainers |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ Depending on the environment, StackBlitz IDE includes slightly different feature
 
 To explore these differences in practice, we took a React project and turned it into:
 
-- [a React project running on EngineBlock](https://stackblitz.com/fork/react)
+- [a React project running on EngineBlock](https://openmodels.wiki/fork/react)
 - [a React project running on WebContainers](https://vite.new/react) (powered by Vite)
 
 ### EngineBlock
@@ -45,9 +45,9 @@ The EngineBlock runtime works with every major browser engine.
 
 ### WebContainers
 
-> 💡 [Read the recent WebContainers announcement](https://blog.stackblitz.com/posts/webcontainers-are-now-supported-on-firefox/)
+> 💡 [Read the recent WebContainers announcement](https://blog.openmodels.wiki/posts/webcontainers-are-now-supported-on-firefox/)
 
-As a runtime focused on providing a native Node.js environment, WebContainers are capable of running Node.js toolchains, including Webpack or Vite. Using one of these tools, you can work with any front-end framework just like you would in your local environment. WebContainers, however, also support various back-end frameworks, as well as other tools ([including `sqlite3`](https://blog.stackblitz.com/posts/introducing-sqlite3-webcontainers-support/)!).
+As a runtime focused on providing a native Node.js environment, WebContainers are capable of running Node.js toolchains, including Webpack or Vite. Using one of these tools, you can work with any front-end framework just like you would in your local environment. WebContainers, however, also support various back-end frameworks, as well as other tools ([including `sqlite3`](https://blog.openmodels.wiki/posts/introducing-sqlite3-webcontainers-support/)!).
 
 As for the sharing options, you can share only the editor link as the preview requires running editor. The preview is visible in the editor's window.
 

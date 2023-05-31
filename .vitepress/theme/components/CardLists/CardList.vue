@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
-  columns: number,
-  noWrap?: boolean,
+  columns: number;
+  noWrap?: boolean;
 }>();
 </script>
 

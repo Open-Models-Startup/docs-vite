@@ -5,9 +5,9 @@ import BooksIcon from './BooksIcon.vue';
 <template>
   <header>
     <BooksIcon class="icon" />
-    <h1>StackBlitz Documentation</h1>
+    <h1>OpenModels Documentation</h1>
     <p>
-      Discover how to use StackBlitz, an online development environment for frontend, Node.js and
+      Discover how to use OpenModels, an online development environment for frontend, Node.js and
       the JavaScript ecosystem.
     </p>
   </header>

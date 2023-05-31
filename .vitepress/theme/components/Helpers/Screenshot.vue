@@ -1,9 +1,9 @@
 <script setup lang="ts">
-  defineProps<{
-    src: string;
-    alt: string;
-    href?: string;
-  }>();
+defineProps<{
+  src: string;
+  alt: string;
+  href?: string;
+}>();
 </script>
 
 <template>
@@ -23,7 +23,7 @@
   border-radius: 8px;
   overflow: hidden;
   :root:not(.dark) & {
-    border: solid 1px rgba(0,0,0,0.05);
+    border: solid 1px rgba(0, 0, 0, 0.05);
   }
   a,
   & > img {

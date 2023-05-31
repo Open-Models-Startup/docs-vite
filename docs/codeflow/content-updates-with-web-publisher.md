@@ -3,7 +3,7 @@ title: &title Content Updates with Web Publisher
 description: &description Content update? A small typo fix? No worries - Web Publisher makes this experience pleasant, including those of us who are not technical!
 head:
   - ['meta', {property: 'og:title', content: *title}] 
-  - ['meta', {property: 'og:image', content: 'https://developer.stackblitz.com/img/og/content-updates-with-web_publisher.png'}]
+  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/content-updates-with-web_publisher.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
 ---
@@ -20,15 +20,16 @@ This page covers using Web Publisher to update your blog posts, docs, or wiki pa
 
 ## Editing a page in Web Publisher
 
-To edit a page, you need to find its corresponding file on GitHub. You can do it in three ways: 
+To edit a page, you need to find its corresponding file on GitHub. You can do it in three ways:
+
 - ["Edit in Web Publisher"](#edit-in-web-publisher-button) button,
 - ["Edit this page on GitHub"](#edit-this-page-on-github) link,
 - [through a GitHub repository](#through-github).
 
 ### "Edit in Web Publisher" button
 
-<a href="https://pr.new/stackblitz/docs/edit/main/docs/codeflow/content-updates-with-web-publisher.md"> 
-<img lang="en" class="float-left" src="/img/edit_in_web_publisher.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/> 
+<a href="https://pr.new/Open-Models-Startup/docs-vite/edit/main/docs/codeflow/content-updates-with-web-publisher.md">
+<img lang="en" class="float-left" src="/img/edit_in_web_publisher.svg" alt="Edit in Web Publisher button" style="width: 150px; margin-top: 4%;"/>
 </a>
 
 If the page features our button, that's it! Click on it and you will be redirected to our friendly publishing tool 💕
@@ -43,17 +44,16 @@ Many pages feature a link that says "Edit this page on GitHub". If that's also t
 
 In the Preview panel on the right side, open the page you want to edit. You will see the edits you introduce as you type (or with a little delay).
 
-### Through GitHub 
+### Through GitHub
 
 Follow these steps:
-1. Go to the repository of the page. 
-2. Find the file you want to edit. Find the "Edit" icon (of a pencil) and click on it. 
+
+1. Go to the repository of the page.
+2. Find the file you want to edit. Find the "Edit" icon (of a pencil) and click on it.
 3. Replace `github.com` with `pr.new` and you will be redirected to Web Publisher.
 4. In the Preview panel on the right side, navigate to the page you want to edit.
 
-
 <img lang="en" src="./assets/wp-opening-from-gh.gif" alt="Opening Web Publisher through GitHub" />
-
 
 ## On your screen
 
@@ -70,12 +70,13 @@ Let us give you a quick tour around this tool.
 On the **left side**, you'll find the information about which file you're editing and in which repository.
 
 On the **right side**, you'll find two buttons:
+
 - **"Propose changes"**, which opens a dropdown with a button to "make a pull request" (which means sending the changes to the repository owner).
-- **Your Profile**, which opens a new browser tab with your StackBlitz profile page.
+- **Your Profile**, which opens a new browser tab with your OpenModels profile page.
 
 ### Editor
 
-Editor is where you will introduce your changes - it is located on the left side or, if the expanded view is enabled, takes a whole center space. 
+Editor is where you will introduce your changes - it is located on the left side or, if the expanded view is enabled, takes a whole center space.
 
 Note that it is possible to specify in the link that Web Publisher will load with the editor on full screen.
 
@@ -86,6 +87,7 @@ In the **top left corner**, you will see the name of the file you're editing.
 <img lang="en" src="./assets/wp-open-in-ide-popup.png" alt="Editor window" style="width: 200px"/>
 
 In the **top right corner**, you will see two icons:
+
 - the "..." icon which opens a popup with the **"Open in Codeflow IDE"** button which redirects to [Codeflow IDE](./working-in-codeflow-ide) - it is helpful when you want to add images or work on a few files.
 - an icon of a two-pointed arrow that either expands the Editor view or switches back to split screen.
 
@@ -100,6 +102,7 @@ Note that it is possible to specify in the link that Web Publisher will load wit
 In the top left corner, you will see the name of the panel ("Preview") and an arrow icon that allows you to trigger a refresh if the changes you introduced are not updating.
 
 In the top right corner, you will see three icons:
+
 - **"Terminal"** which opens a terminal window at the bottom where you can see the terminal output, including possible errors (these might be helpful when reporting an issue).
 - **"Open in new tab"** which opens a new browser tab with the Preview in case you want to see it full screen.
 - **"Expand the view"** or **"Switch back to split screen"** icon.
@@ -114,7 +117,7 @@ If the name of the edited file ends in `.md`, this is a Markdown file and it may
 
 ## Submitting your changes
 
-You've introduced the edits and you're ready to submit them for the review. 
+You've introduced the edits and you're ready to submit them for the review.
 
 :::warning IMPORTANT:
 Before you send the changes to the owner of the page, please double check the text for typos, stylistic errors, links that don't work, and so on. Make sure that your edits are top-notch and are actually helpful.
