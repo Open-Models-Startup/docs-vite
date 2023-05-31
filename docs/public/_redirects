@@ -1,17 +1,20 @@
 # Redirect bare section paths to their first page
+
 /codeflow   /codeflow/what-is-codeflow
 /enterprise   /enterprise/overview
-/guides   /guides/user-guide/what-is-OpenModels
-/guides/user-guide  /guides/user-guide/what-is-OpenModels
+/guides   /guides/user-guide/what-is-openmodels
+/guides/user-guide  /guides/user-guide/what-is-openmodels
 /guides/integration   /guides/integration/embedding
 /platform   /
 /platform/api   /platform/api/javascript-sdk
 /platform/webcontainers   /platform/webcontainers/browser-support
 
 # Pages recently removed or renamed
+
 /platform/webcontainers/browser-config-brave   /platform/webcontainers/browser-config#brave-service-workers
 
 # Redirect old URL patterns
+
 /docs/enterprise   /enterprise/overview
 /docs/enterprise/adfs-sso/   /enterprise/adfs-sso
 /docs/enterprise/configuring-dns/   /enterprise/configuring-dns
@@ -55,8 +58,9 @@
 /docs/platform/third-party-blocker/   /platform/webcontainers/browser-config
 /docs/platform/turbo/   /platform/webcontainers/turbo-package-manager
 /docs/platform/webcontainer-api/   /platform/api/webcontainer-api
-/docs/platform/what-is-OpenModels/   /guides/user-guide/what-is-OpenModels
+/docs/platform/what-is-openmodels/   /guides/user-guide/what-is-openmodels
 
 # Older redirects, can maybe be removed?
+
 /docs/platform  /
 /docs/platform/supported-frameworks  /guides/user-guide/starter-projects

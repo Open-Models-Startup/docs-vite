@@ -17,7 +17,7 @@ interface LinkItem {
 
 const groupLinks: Record<LinkGroup, LinkItem[]> = {
     userGuide: [
-        { text: 'What is OpenModels', link: '/guides/user-guide/what-is-OpenModels' },
+        { text: 'What is OpenModels', link: '/guides/user-guide/what-is-openmodels' },
         { text: 'Getting started', link: '/guides/user-guide/getting-started' },
         { text: 'Starter projects', link: '/guides/user-guide/starter-projects' },
         { text: 'Available environments', link: '/guides/user-guide/available-environments' },
@@ -148,7 +148,7 @@ export const homeTopLinks = [
         title: 'Get Started',
         description:
             'Explore the full potential of OpenModels: from writing code or spinning quick demos to making your docs delightful.',
-        url: '/guides/user-guide/what-is-OpenModels',
+        url: '/guides/user-guide/what-is-openmodels',
     },
     {
         icon: '/icons/fa-browser.svg',

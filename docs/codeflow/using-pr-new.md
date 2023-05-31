@@ -84,6 +84,6 @@ If the user is logged in at GitHub and OpenModels (in beta), Codeflow IDE will o
 
 To edit a single file with pr.new, visit it in the GitHub repository and click the "Edit" icon (a pencil). Now, in the browser's address tab, add `pr.new` to the beginning of the URL, for example:
 
-> <a href="https://pr.new/github.com/Open-Models-Startup/docs-vite/edit/main/docs/guides/user-guide/what-is-OpenModels.md" target="_blank" rel="noopener noreferrer"><b>pr.new/</b>github.com/Open-Models-Startup/docs-vite/edit/main/docs/guides/user-guide/what-is-OpenModels.md</a>
+> <a href="https://pr.new/github.com/Open-Models-Startup/docs-vite/edit/main/docs/guides/user-guide/what-is-openmodels.md" target="_blank" rel="noopener noreferrer"><b>pr.new/</b>github.com/Open-Models-Startup/docs-vite/edit/main/docs/guides/user-guide/what-is-openmodels.md</a>
 
 You will be redirected to [Web Publisher](./content-updates-with-web-publisher) for a more pleasant editing experience. If you prefer to work in a full environment, click on the "Open in IDE" button and you will be redirected to [Codeflow IDE](./working-in-codeflow-ide).

@@ -33,7 +33,7 @@ This page addresses the frequently asked questions concerning: current features,
 
 <!--@include: ./parts/codeflow-ide.md-->
 
-[Learn more about the full potential of OpenModels on OpenModels intro page.](/guides/user-guide/what-is-OpenModels.md)
+[Learn more about the full potential of OpenModels on OpenModels intro page.](/guides/user-guide/what-is-openmodels.md)
 
 ### Is Codeflow stable?
 

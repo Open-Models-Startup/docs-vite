@@ -72,7 +72,7 @@ Web Publisher links follow this pattern:
 
 For example, here is a Web Publisher link to our docs page:
 
-`https://pr.new/github.com/Open-Models-Startup/docs-vite/edit/main/docs/guides/user-guide/what-is-OpenModels.md`
+`https://pr.new/github.com/Open-Models-Startup/docs-vite/edit/main/docs/guides/user-guide/what-is-openmodels.md`
 
 ### Customize the link
 
@@ -87,7 +87,7 @@ To specify the first parameter, add `?` at the end of the base link. Connect the
 <p>
     <b>Default behavior:</b> the Preview window renders the homepage as not always the file path or file name is the same as the rendered route.<br/>
     <b>Argument:</b> A route to be rendered.<br/>
-    <b>Example:</b> <code>initialPath=guides/user-guide/what-is-OpenModels</code><br/>
+    <b>Example:</b> <code>initialPath=guides/user-guide/what-is-openmodels</code><br/>
 </p>
 
 ### `view`
