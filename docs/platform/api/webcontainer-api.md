@@ -16,6 +16,6 @@ head:
 
 Head over to the [WebContainers docs](https://webcontainers.io) to learn more, see the API reference, follow tutorials, reference the commercial use case - or, try it out yourself with this minimalistic starter:
 
-[![Open in OpenModels](https://openmodels.wiki/img/open_in_OpenModels.svg)](https://webcontainer.new)
+[![Open in OpenModels](https://openmodels.wiki/img/open_in_openmodels.svg)](https://webcontainer.new)
 
 We're excited to see what you'll build!

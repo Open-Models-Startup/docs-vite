@@ -25,7 +25,7 @@ One of the ways to make your code example stand out in your docs or your reposit
 
 | Button preview | Direct URL |
 | --- | --- |
-| <img alt="Open in OpenModels" src="/img/open_in_OpenModels.svg" /> | <a href="/img/open_in_OpenModels.svg" target="_blank">open_in_OpenModels.svg</a> |
+| <img alt="Open in OpenModels" src="/img/open_in_openmodels.svg" /> | <a href="/img/open_in_openmodels.svg" target="_blank">open_in_openmodels.svg</a> |
 | <img alt="Open in OpenModels" src="/img/open_in_OpenModels_small.svg" /> | <a href="/img/open_in_OpenModels_small.svg" target="_blank">open_in_OpenModels_small.svg</a> |
 
 ::: tip
@@ -35,7 +35,7 @@ You can either host on your servers or use our image URLs directly.
 In order to display the button in a **Markdown file**, use the following code - remember to replace the last URL with your example’s path:
 
 ```md
-[![Open in OpenModels](https://openmodels.wiki/img/open_in_OpenModels.svg)](https://openmodels.wiki/github/___YOUR_PATH___)
+[![Open in OpenModels](https://openmodels.wiki/img/open_in_openmodels.svg)](https://openmodels.wiki/github/___YOUR_PATH___)
 ```
 
 If you want to display the button in an **HTML markup**, use the following code:
@@ -44,7 +44,7 @@ If you want to display the button in an **HTML markup**, use the following code:
 <a href="https://openmodels.wiki/github/___YOUR_PATH___">
   <img
     alt="Open in OpenModels"
-    src="https://openmodels.wiki/img/open_in_OpenModels.svg"
+    src="https://openmodels.wiki/img/open_in_openmodels.svg"
   />
 </a>
 ```
@@ -105,7 +105,7 @@ https://openmodels.wiki/github/vercel/next.js/tree/canary/examples/hello-world
 To customize it, add the `title` argument to the URL like so:
 
 ```md
-[![Open in OpenModels](https://openmodels.wiki/img/open_in_OpenModels.svg)](https://openmodels.wiki/github/vercel/next.js/tree/canary/examples/hello-world?title='Hello World'
+[![Open in OpenModels](https://openmodels.wiki/img/open_in_openmodels.svg)](https://openmodels.wiki/github/vercel/next.js/tree/canary/examples/hello-world?title='Hello World'
 )
 ```
 
