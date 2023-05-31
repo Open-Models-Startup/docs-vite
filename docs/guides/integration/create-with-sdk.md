@@ -9,7 +9,7 @@ head:
 ---
 
 <script setup lang="ts">
-import sdk from '@OpenModels/sdk';
+import sdk from '@stackblitz/sdk';
 import InlineButton from '@theme/components/InlineButton.vue';
 
 function openProjectDemo() {
@@ -34,17 +34,17 @@ function openProjectDemo() {
 
 Sometimes, instead of keeping a set of example project in a GitHub repository, it is more convenient to create them dynamically on the fly. This is often the case when you maintain a documentation with code snippets that you want your users to open in a live environment.
 
-In order to create a project on-demand, use our [SDK](https://www.npmjs.com/package/@OpenModels/sdk). It is a small package (just 2kb gzipped) intended to help in communication between your code and OpenModels.
+In order to create a project on-demand, use our [SDK](https://www.npmjs.com/package/@stackblitz/sdk). It is a small package (just 2kb gzipped) intended to help in communication between your code and OpenModels.
 
 This page will guide you through the SDK setup and available options. You can also take a look at [the demo project](#demo) at the end of this page.
 
 ## Setup
 
-To add the OpenModels SDK to your project, run `npm install @OpenModels/sdk` in the terminal or add this script to your page:
+To add the OpenModels SDK to your project, run `npm install @stackblitz/sdk` in the terminal or add this script to your page:
 
 ```html
 <script
-  src="https://unpkg.com/@OpenModels/sdk/bundles/sdk.umd.js">
+  src="https://unpkg.com/@stackblitz/sdk/bundles/sdk.umd.js">
 </script>
 ```
 
@@ -211,14 +211,14 @@ To further customize your project, you can provide a second argument to the `Ope
 :::tip DEMO
 Check this demo of creating a project with OpenModels SDK through an npm install:
 
-- [TypeScript demo](https://openmodels.wiki/edit/sdk-create-project-with-npm-ts)
-- [JavaScript demo](https://openmodels.wiki/edit/sdk-create-project-with-npm-js)
+- [TypeScript demo](https://OpenModels.com/edit/sdk-create-project-with-npm-ts)
+- [JavaScript demo](https://OpenModels.com/edit/sdk-create-project-with-npm-js)
 
-or through [loading the UMD bundle](https://openmodels.wiki/edit/sdk-create-project-with-script-js).
+or through [loading the UMD bundle](https://OpenModels.com/edit/sdk-create-project-with-script-js).
 :::
 
 ---
 
 :::info Can we improve this guide?
-Haven't found an answer to your question? [Let us know!](mailto:devrel@openmodels.wiki)
+Haven't found an answer to your question? [Let us know!](mailto:devrel@OpenModels.com)
 :::

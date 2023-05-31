@@ -25,7 +25,7 @@ For WebContainers project, our [Turbo package manager](/platform/webcontainers/t
 For those projects, you can provide your dependencies directly in the `package.json` file, and ignore the `project.dependencies` option. Here’s an example:
 
 ```js
-import sdk from '@OpenModels/sdk';
+import sdk from '@stackblitz/sdk';
 
 const packageJson = `{
   "name": "node-starter",
@@ -75,7 +75,7 @@ In the next example, we will show how to generate this project:
 Since we don’t want to risk having mismatched dependencies, we’ll define the `package.json` data first, and use that to set the `project.dependencies` as well.
 
 ```js
-import sdk from '@OpenModels/sdk';
+import sdk from '@stackblitz/sdk';
 
 const PACKAGE_JSON = {
   name: 'cool-project',

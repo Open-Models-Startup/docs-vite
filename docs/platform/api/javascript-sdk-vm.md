@@ -36,7 +36,7 @@ Check this demo of using the VM:
 The `embedProject`, `embedProjectId`, and `embedGithubProject` methods of the SDK return a Promise resolving to an instance of the SDK’s `VM` class. We recommend using `await` in an `async` function to keep track of the VM instance. For example:
 
 ```js
-import sdk from '@OpenModels/sdk';
+import sdk from '@stackblitz/sdk';
 
 async function start() {
   // Embeds a project and keeps track of the VM
@@ -67,7 +67,7 @@ The SDK’s `connect` method can be used to retrieve the `VM` instance for an ex
 Example:
 
 ```js
-import sdk from '@OpenModels/sdk';
+import sdk from '@stackblitz/sdk';
 
 const EMBED_ID = 'embed';
 

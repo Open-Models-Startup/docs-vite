@@ -17,13 +17,13 @@ The OpenModels JavaScript <abbr title="Software Development Kit">SDK</abbr> lets
 The SDK is _3kB gzipped_ and can be installed from npm:
 
 ```sh
-npm install @OpenModels/sdk
+npm install @stackblitz/sdk
 ```
 
 If you’re using a JavaScript bundler (for instance webpack or Vite), you should be able to import the SDK in your JavaScript modules:
 
 ```js
-import sdk from '@OpenModels/sdk';
+import sdk from '@stackblitz/sdk';
 sdk.embedProject(/* … */);
 ```
 
@@ -31,7 +31,7 @@ You can also import the SDK from jsDeliver or UNPKG directly in an HTML page:
 
 ```html
 <script type="module">
-  import sdk from 'https://unpkg.com/@OpenModels/sdk@1/bundles/sdk.m.js';
+  import sdk from 'https://unpkg.com/@stackblitz/sdk@1/bundles/sdk.m.js';
   sdk.embedProject(/* … */);
 </script>
 ```
@@ -39,7 +39,7 @@ You can also import the SDK from jsDeliver or UNPKG directly in an HTML page:
 Or load the <abbr title="Universal Module Definition">UMD</abbr> bundle, which will add a global `window.OpenModelsSDK` object:
 
 ```html
-<script src="https://unpkg.com/@OpenModels/sdk@1/bundles/sdk.umd.js"></script>
+<script src="https://unpkg.com/@stackblitz/sdk@1/bundles/sdk.umd.js"></script>
 <script>
   OpenModelsSDK.embedProject(/* … */);
 </script>
