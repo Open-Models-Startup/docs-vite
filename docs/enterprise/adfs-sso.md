@@ -54,7 +54,7 @@ On this screen you will add two (2) rules: OpenModels Attributes and Name ID. Cl
 
 Claim rule template: Send LDAP Attribures as Claims
 
-![OpenModels Attributes Rule](./assets/adfs-sso/OpenModels-attributes.png)
+![OpenModels Attributes Rule](./assets/adfs-sso/openmodels-attributes.png)
 
 Claim rule template: Transform an Incoming Claim
 
