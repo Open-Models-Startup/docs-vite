@@ -1,8 +1,8 @@
 ---
 title: &title Turbo Package Manager
-description: &description iHub-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. 
+description: &description iCreate-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`.
 head:
-  - ['meta', {property: 'og:title', content: *title}] 
+  - ['meta', {property: 'og:title', content: *title}]
   - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/webcontainer-turbo-package-manager.png'}]
   - ['meta', {name: 'twitter:title', content: *title}]
   - ['meta', {name: 'twitter:description', content: *description}]
@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-iHub-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. For many commands, you can invoke `npm` or `yarn` directly and they will work as usual:
+iCreate-based projects use Turbo as package manager. Turbo is our custom npm client and it works similarly to `npm` and `yarn`. For many commands, you can invoke `npm` or `yarn` directly and they will work as usual:
 
 ```sh
 # install dependencies
@@ -57,7 +57,7 @@ Some of the available options are:
 
 <span id="turbo-sh-install-scripts"></span>
 
-Turbo **does not run install scripts** for your dependencies. This increases the security of the installation process, and prevents the spurious errors arising from the differences between the underlying platform (iHub) and a local environment.
+Turbo **does not run install scripts** for your dependencies. This increases the security of the installation process, and prevents the spurious errors arising from the differences between the underlying platform (iCreate) and a local environment.
 
 One of the main use cases of install scripts is driving the compilation of native add-ons. We instead favor usage of [WebAssembly polyfills](#webassembly-polyfills).
 
@@ -67,7 +67,7 @@ One of the main use cases of install scripts is driving the compilation of nativ
 
 <span id="turbo-sh-polyfills"></span>
 
-While iHub cannot use packages based on native add-ons, they absolutely can use packages based on WebAssembly (for instance, `esbuild-wasm` instead of `esbuild`). Using WebAssembly-based packages increases the portability and security of your code.
+While iCreate cannot use packages based on native add-ons, they absolutely can use packages based on WebAssembly (for instance, `esbuild-wasm` instead of `esbuild`). Using WebAssembly-based packages increases the portability and security of your code.
 
 However, sometimes, packages using native code are deep within your dependency tree like, for instance, an image processing tool used by your bundler. Replacing those packages would not be feasible without significantly altering the configuration of your project. The Turbo registry is able to **detect the usage of non-supported packages at installation time and swap them** for you.
 

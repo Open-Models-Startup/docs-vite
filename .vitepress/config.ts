@@ -35,8 +35,8 @@ export default defineConfig({
         nav: [
             { text: 'Guides', link: defaultGroupLink('userGuide') },
             { text: 'iEcho', link: defaultGroupLink('iecho') },
-            { text: 'API', link: defaultGroupLink('api') },
             { text: 'iHub', link: defaultGroupLink('ihub') },
+            { text: 'iCreate', link: defaultGroupLink('icreate') }, { text: 'API', link: defaultGroupLink('api') },
             { text: 'Enterprise', link: defaultGroupLink('enterprise') },
         ],
         sidebar: {
@@ -44,6 +44,7 @@ export default defineConfig({
             '/iecho/': sidebarLinks('main', ['iecho']),
             '/platform/api/': sidebarLinks('main', ['api']),
             '/platform/ihub/': sidebarLinks('main', ['ihub']),
+            '/platform/icreate/': sidebarLinks('main', ['icreate']),
             '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
         },
     },

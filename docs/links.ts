@@ -97,7 +97,7 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
     { text: 'Browser configuration', link: '/platform/icreate/browser-config' },
     { text: 'Project configuration', link: '/platform/icreate/project-config' },
     { text: 'Turbo package manager', link: '/platform/icreate/turbo-package-manager' },
-    { text: 'Troubleshooting', link: '/platform/icreate/troubleshooting-ihub' },]
+    { text: 'Troubleshooting', link: '/platform/icreate/troubleshooting-icreate' },]
 };
 
 const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {

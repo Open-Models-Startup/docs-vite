@@ -1,6 +1,6 @@
 ---
 title: &title Project configuration
-description: &description "Projects based on iHub can be configured in the following ways: 1. with project files (`package.json` or `.OpenModelsrc`), 2. with URL parameters#with-url-parameters."
+description: &description "Projects based on iCreate can be configured in the following ways: 1. with project files (`package.json` or `.OpenModelsrc`), 2. with URL parameters#with-url-parameters."
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/webcontainer-project-configuration.png'}]
@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-Projects based on iHub can be configured in the following ways:
+Projects based on iCreate can be configured in the following ways:
 
 1. [with project files](#with-project-files) (`package.json` or `.OpenModelsrc`),
 2. [with URL parameters](#with-url-parameters).
@@ -96,7 +96,7 @@ To disable this behavior, set `startCommand` to `false` (which means: "do nothin
   </tr>
 </table>
 
-The `compileTrigger` option controls how file changes in the editor are written to the iHub in-memory filesystem. Note that writing to this in-memory filesystem does not mean that changes are persisted on `openmodels.wiki` - this requires a separate “Save” action from users.
+The `compileTrigger` option controls how file changes in the editor are written to the iCreate in-memory filesystem. Note that writing to this in-memory filesystem does not mean that changes are persisted on `openmodels.wiki` - this requires a separate “Save” action from users.
 
 This option can be useful if your project runs a development server (such as Vite or webpack-dev-server), which compiles user code whenever source files change.
 
