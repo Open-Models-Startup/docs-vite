@@ -38,7 +38,7 @@ Each template has its own rules for compiling source files, and requires specifi
 | `'polymer'` | [EngineBlock][available_env_docs] | `index.html` |
 | `'typescript'` | [EngineBlock][available_env_docs] | `index.html` and `index.ts` |
 | `'vue'` | [EngineBlock][available_env_docs] | `public/index.html` and `src/main.js` |
-| `'node'` | [WebContainers][available_env_docs] | _No requirements_ |
+| `'node'` | [iHub][available_env_docs] | _No requirements_ |
 
 ## <var>ProjectFiles</var> {#projectfiles}
 
@@ -61,7 +61,7 @@ A plain object representing npm packages and their versions, to be installed at 
 - Object values: strings representing npm package version specifiers.
 
 :::info Environment differences
-ProjectDependencies are only used in the [EngineBlock environment][available_env_docs]. For WebContainers, please provide a `package.json` file instead.
+ProjectDependencies are only used in the [EngineBlock environment][available_env_docs]. For iHub, please provide a `package.json` file instead.
 
 Read more about [the recommended ways to specify project dependencies](/platform/api/javascript-sdk-dependencies) for each runtime environment.
 :::
@@ -76,7 +76,7 @@ Compilation settings for [EngineBlock][available_env_docs] projects.
 | `compile.action` | `'hmr'` or `'refresh'` | Determines how compiled changes should be injected. | `'hmr'` |
 | `compile.clearConsole` | Boolean | Determines if the Console should be cleared after compilation. | `true` |
 
-In projects running on [WebContainers][available_env_docs] (which use `template: 'node'`), only `compile.trigger` is used. This affects the time at which file changes in the editor are written to the virtual filesystem.
+In projects running on [iHub][available_env_docs] (which use `template: 'node'`), only `compile.trigger` is used. This affects the time at which file changes in the editor are written to the virtual filesystem.
 
 ## <var>OpenOptions</var> {#openoptions}
 
@@ -100,7 +100,7 @@ Check this demo showcasing all available open options:
 | `openFile` | [OpenFileOption][] (String or Array) | Specifies which file(s) to open in the editor and code lines to highlight. | - |
 | `origin` | String | OpenModels Enterprise Edition: sets the origin URL of the OpenModels EE instance. | - |
 | `showSidebar` | Boolean | Shows the [Sidebar][ui_docs] as open (`true`) or closed (`false`) on page load. | - |
-| `terminalHeight` | Number | Sets the [Terminal][ui_docs] height (from `0` to `100`). [WebContainers][available_env_docs] only. | `30` |
+| `terminalHeight` | Number | Sets the [Terminal][ui_docs] height (from `0` to `100`). [iHub][available_env_docs] only. | `30` |
 | `theme` | [UiThemeOption][] (String) | Sets the desired color theme. | see [UiThemeOption][] |
 | `view` | [UiViewOption][] (String) | Sets the initial [UI view][ui_docs]: editor, preview, or both. | see [UiThemeOption][] |
 
@@ -127,7 +127,7 @@ Check this demo showcasing all available embed options:
 | `openFile` | [OpenFileOption][] (String or Array) | Specifies which file(s) to open in the editor and code lines to highlight. | - |
 | `origin` | String | OpenModels Enterprise Edition: sets the origin URL of the OpenModels EE instance. | - |
 | `showSidebar` | Boolean | Shows the [Sidebar][ui_docs] as open (`true`) or closed (`false`) on page load. | - |
-| `terminalHeight` | Number | Sets [Terminal][ui_docs] height (from `0` to `100`). [WebContainers][available_env_docs] only. | `30` |
+| `terminalHeight` | Number | Sets [Terminal][ui_docs] height (from `0` to `100`). [iHub][available_env_docs] only. | `30` |
 | `theme` | [UiThemeOption][] (String) | Sets the desired color theme. | see [UiThemeOption][] |
 | `view` | [UiViewOption][] (String) | Sets the initial [UI view][ui_docs]: editor, preview, or both. | see [UiViewOption][] |
 | `width` | Number | Sets the width of the embed iframe. | `100%` |

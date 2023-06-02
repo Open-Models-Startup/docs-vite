@@ -3,11 +3,12 @@
 
 type LinkGroup =
     | 'api'
-    | 'codeflow'
+    | 'iecho'
+    | 'icreate'
     | 'enterprise'
     | 'integrationGuide'
     | 'userGuide'
-    | 'webcontainers';
+    | 'ihub';
 
 interface LinkItem {
     text: string;
@@ -32,17 +33,17 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
         { text: 'Creating projects with the SDK', link: '/guides/integration/create-with-sdk' },
         { text: 'Bug reproductions', link: '/guides/integration/bug-reproductions' },
     ],
-    codeflow: [
-        { text: 'What is Codeflow?', link: '/codeflow/what-is-codeflow' },
-        { text: 'Using pr.new', link: '/codeflow/using-pr-new' },
-        { text: 'Working in Codeflow IDE', link: '/codeflow/working-in-codeflow-ide' },
-        { text: 'Integrating CodeflowApp bot', link: '/codeflow/integrating-codeflowapp-bot' },
+    iecho: [
+        { text: 'What is iEcho?', link: '/iecho/what-is-iecho' },
+        { text: 'Using pr.new', link: '/iecho/using-pr-new' },
+        { text: 'Working in iEcho IDE', link: '/iecho/working-in-iecho-ide' },
+        { text: 'Integrating iEchoApp bot', link: '/iecho/integrating-iechoapp-bot' },
         {
             text: 'Content updates with Web Publisher',
-            link: '/codeflow/content-updates-with-web-publisher',
+            link: '/iecho/content-updates-with-web-publisher',
         },
-        { text: 'Integrating Web Publisher', link: '/codeflow/integrating-web-publisher' },
-        { text: 'Codeflow FAQ', link: '/codeflow/codeflow-faq' },
+        { text: 'Integrating Web Publisher', link: '/iecho/integrating-web-publisher' },
+        { text: 'iEcho FAQ', link: '/iecho/iecho-faq' },
     ],
     api: [
         {
@@ -58,12 +59,12 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
         { text: 'POST API', link: '/platform/api/post-api' },
         { text: 'WebContainer API', link: '/platform/api/webcontainer-api' },
     ],
-    webcontainers: [
-        { text: 'Browser support', link: '/platform/webcontainers/browser-support' },
-        { text: 'Browser configuration', link: '/platform/webcontainers/browser-config' },
-        { text: 'Project configuration', link: '/platform/webcontainers/project-config' },
-        { text: 'Turbo package manager', link: '/platform/webcontainers/turbo-package-manager' },
-        { text: 'Troubleshooting', link: '/platform/webcontainers/troubleshooting-webcontainers' },
+    ihub: [
+        { text: 'Browser support', link: '/platform/ihub/browser-support' },
+        { text: 'Browser configuration', link: '/platform/ihub/browser-config' },
+        { text: 'Project configuration', link: '/platform/ihub/project-config' },
+        { text: 'Turbo package manager', link: '/platform/ihub/turbo-package-manager' },
+        { text: 'Troubleshooting', link: '/platform/ihub/troubleshooting-ihub' },
     ],
     enterprise: [
         { text: 'Overview', link: '/enterprise/overview' },
@@ -92,6 +93,11 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
         { text: 'Aggregating Logs', link: '/enterprise/log-aggregation' },
         { text: 'Data Migration', link: '/enterprise/data-migration' },
     ],
+    icreate: [{ text: 'Browser support', link: '/platform/icreate/browser-support' },
+    { text: 'Browser configuration', link: '/platform/icreate/browser-config' },
+    { text: 'Project configuration', link: '/platform/icreate/project-config' },
+    { text: 'Turbo package manager', link: '/platform/icreate/turbo-package-manager' },
+    { text: 'Troubleshooting', link: '/platform/icreate/troubleshooting-ihub' },]
 };
 
 const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
@@ -103,21 +109,25 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
         text: 'Integration Guide',
         items: groupLinks.integrationGuide,
     },
-    codeflow: {
-        text: 'Codeflow',
-        items: groupLinks.codeflow,
+    iecho: {
+        text: 'iEcho',
+        items: groupLinks.iecho,
     },
-    api: {
-        text: 'OpenModels API',
-        items: groupLinks.api,
+    ihub: {
+        text: 'iHub',
+        items: groupLinks.ihub,
     },
-    webcontainers: {
-        text: 'WebContainers',
-        items: groupLinks.webcontainers,
+    icreate: {
+        text: 'iCreate',
+        items: groupLinks.icreate,
     },
     enterprise: {
         text: 'Enterprise Edition',
         items: groupLinks.enterprise,
+    },
+    api: {
+        text: 'OpenModels API',
+        items: groupLinks.api,
     },
 };
 
@@ -152,10 +162,10 @@ export const homeTopLinks = [
     },
     {
         icon: '/icons/fa-browser.svg',
-        title: 'Codeflow',
+        title: 'iEcho',
         description:
             'One click opens a full in-browser IDE for your repos, issues, and PRs. No more cloning, installing, stashing!',
-        url: '/codeflow/what-is-codeflow',
+        url: '/iecho/what-is-iecho',
     },
     {
         icon: '/icons/fa-brackets-curly.svg',
@@ -166,10 +176,10 @@ export const homeTopLinks = [
     },
     {
         icon: '/icons/fa-gear.svg',
-        title: 'WebContainers',
+        title: 'iHub',
         description:
             'Learn about browser support, package managers, project config, performance, and troubleshooting.',
-        url: '/platform/webcontainers/browser-support',
+        url: '/platform/ihub/browser-support',
     },
     {
         icon: '/icons/fa-life-ring.svg',

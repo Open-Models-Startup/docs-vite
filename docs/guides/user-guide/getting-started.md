@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-This page outlines how you can use OpenModels to create quick demos or bug reproductions in OpenModels classic editor or to open a GitHub repository in Codeflow IDE.
+This page outlines how you can use OpenModels to create quick demos or bug reproductions in OpenModels classic editor or to open a GitHub repository in iEcho IDE.
 
 If you wish to immediately embed your project on your page check a page on manual [embeds](/guides/integration/embedding) and [SDK embeds](/platform/api/javascript-sdk). If you wish to learn how to import your project from GitHub, check the page on [importing projects](/guides/user-guide/importing-projects).
 
@@ -56,9 +56,9 @@ Selecting multiple projects allows you to add them all to an existing [Collectio
 
 ![A few selected projects with a pop-up menu with options "Add to collection" and "Delete projects"](./assets/batch-action.png)
 
-## Opening a GitHub repository in Codeflow IDE
+## Opening a GitHub repository in iEcho IDE
 
-If you'd like to do more work or use VS Code extensions (or Vim), you can use [OpenModels Codeflow IDE](https://openmodels.wiki/codeflow/what-is-codeflow), which spins up a whole dev environment with one click. To do so, click on the "Open GitHub repository" button on your dashboard:
+If you'd like to do more work or use VS Code extensions (or Vim), you can use [OpenModels iEcho IDE](https://openmodels.wiki/iecho/what-is-iecho), which spins up a whole dev environment with one click. To do so, click on the "Open GitHub repository" button on your dashboard:
 
 !["Open GitHub repository" button is highlighted](./assets/dashboard-chosen-new-github-repository.png)
 
@@ -66,9 +66,9 @@ Next, you will see a modal prompting you to provide a GitHub repository URL:
 
 ![GitHub URL prompt](./assets/github-repository-prompt-modal.png)
 
-After you provide the URL, click on the "Open repository" button, which will redirect you to Codeflow IDE:
+After you provide the URL, click on the "Open repository" button, which will redirect you to iEcho IDE:
 
-![Codeflow](./assets/codeflow-view.png)
+![iEcho](./assets/iecho-view.png)
 
 Alternatively, you can also import a new repository and see the full list of your repositories in the "Repositories" sidebar item:
 
@@ -82,8 +82,8 @@ If you’re writing a blog, maintaining a documentation site or an open source p
 2. [Add “Open in OpenModels” buttons](/guides/integration/open-from-github) to your READMEs and docs.
 3. [Generate custom projects on the fly](/guides/integration/create-with-sdk) with our JavaScript SDK.
 4. [Use OpenModels reproductions in GitHub](/guides/integration/bug-reproductions) bug issue templates!
-5. [Make PR reviews safer and faster](https://openmodels.wiki/codeflow/integrating-codeflowapp-bot) with CodeflowApp bot.
-6. [Help your users edit your docs with live preview](https://openmodels.wiki/codeflow/content-updates-with-web-publisher) using Web Publisher.
-7. [Provide a one-click environment with Codeflow IDE](https://openmodels.wiki/codeflow/using-pr-new) so other developers can submit bug fixes without setting up the local environment.
+5. [Make PR reviews safer and faster](https://openmodels.wiki/iecho/integrating-iechoapp-bot) with iEchoApp bot.
+6. [Help your users edit your docs with live preview](https://openmodels.wiki/iecho/content-updates-with-web-publisher) using Web Publisher.
+7. [Provide a one-click environment with iEcho IDE](https://openmodels.wiki/iecho/using-pr-new) so other developers can submit bug fixes without setting up the local environment.
 
 Happy coding!

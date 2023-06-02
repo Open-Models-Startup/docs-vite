@@ -20,7 +20,7 @@ export default defineConfig({
     lang: 'en-US',
     title: 'OpenModels Docs',
     description:
-        'Discover how to use OpenModels, an online development environment for frontend, Node.js and the JavaScript ecosystem.',
+        "Welcome to OpenModels, a vibrant community that democratizes AI through accessibility, innovation, and collaboration. Welcome aboard!",
     head: getHeadTags(process.env),
 
     // Theme
@@ -34,16 +34,16 @@ export default defineConfig({
         },
         nav: [
             { text: 'Guides', link: defaultGroupLink('userGuide') },
-            { text: 'Codeflow', link: defaultGroupLink('codeflow') },
+            { text: 'iEcho', link: defaultGroupLink('iecho') },
             { text: 'API', link: defaultGroupLink('api') },
-            { text: 'WebContainers', link: defaultGroupLink('webcontainers') },
+            { text: 'iHub', link: defaultGroupLink('ihub') },
             { text: 'Enterprise', link: defaultGroupLink('enterprise') },
         ],
         sidebar: {
             '/guides/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
-            '/codeflow/': sidebarLinks('main', ['codeflow']),
+            '/iecho/': sidebarLinks('main', ['iecho']),
             '/platform/api/': sidebarLinks('main', ['api']),
-            '/platform/webcontainers/': sidebarLinks('main', ['webcontainers']),
+            '/platform/ihub/': sidebarLinks('main', ['ihub']),
             '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
         },
     },

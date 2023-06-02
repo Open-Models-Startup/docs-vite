@@ -15,12 +15,12 @@ When creating new projects with the [`sdk.openProject`](/platform/api/javascript
 The expected way to specify dependencies depends on the [runtime environment](/guides/user-guide/available-environments).
 
 :::info Reminder
-Projects created with the `template: 'node'` option will use the WebContainers environment (currently on openmodels.wiki only). Projects created with a different `template` value will use the EngineBlock environment (available on openmodels.wiki and OpenModels Enterprise Edition).
+Projects created with the `template: 'node'` option will use the iHub environment (currently on openmodels.wiki only). Projects created with a different `template` value will use the EngineBlock environment (available on openmodels.wiki and OpenModels Enterprise Edition).
 :::
 
-## With WebContainers
+## With iHub
 
-For WebContainers project, our [Turbo package manager](/platform/webcontainers/turbo-package-manager) will install `dependencies` and `devDependencies` from the project’s `package.json` file, much like `npm`, `pnpm` or `yarn` would.
+For iHub project, our [Turbo package manager](/platform/ihub/turbo-package-manager) will install `dependencies` and `devDependencies` from the project’s `package.json` file, much like `npm`, `pnpm` or `yarn` would.
 
 For those projects, you can provide your dependencies directly in the `package.json` file, and ignore the `project.dependencies` option. Here’s an example:
 
@@ -54,8 +54,8 @@ sdk.openProject(project);
 :::tip DEMO
 Check this complete Angular project:
 
-- [TypeScript demo](https://openmodels.wiki/edit/sdk-webcontainers-dependencies-ts)
-- [JavaScript demo](https://openmodels.wiki/edit/sdk-webcontainers-dependencies-js)
+- [TypeScript demo](https://openmodels.wiki/edit/sdk-ihub-dependencies-ts)
+- [JavaScript demo](https://openmodels.wiki/edit/sdk-ihub-dependencies-js)
 :::
 
 ## With EngineBlock

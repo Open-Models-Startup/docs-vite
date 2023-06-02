@@ -117,7 +117,7 @@ Gets the project’s defined dependencies. Returns a promise resolving to a [Pro
 
 In [EngineBlock][env_docs] projects, it returns the dependencies as resolved by the built-in package manager, with exact versions as values. For example: `{ 'react': '18.2.0' }`.
 
-_Since 1.7.0:_ in project running on [WebContainers][env_docs], it reads the contents of the top-level `package.json` file and returns an object merging `dependencies` and `devDependencies`, with the original version specifiers as values. For example, `{ 'react': '^18.0.0' }`.
+_Since 1.7.0:_ in project running on [iHub][env_docs], it reads the contents of the top-level `package.json` file and returns an object merging `dependencies` and `devDependencies`, with the original version specifiers as values. For example, `{ 'react': '^18.0.0' }`.
 
 Example:
 
@@ -223,7 +223,7 @@ await vm.editor.showSidebar(true);
 
 A string with the origin (protocol and domain) of the preview iframe. Every project created with the `embedProject` method gets a unique preview URL.
 
-Because it is unknown ahead of time if the project will run a web server (and if so, on which port), `vm.preview.origin` will always be `null` in projects running on [WebContainers][env_docs]. You can use [`vm.preview.getUrl`](#previewgeturl) instead.
+Because it is unknown ahead of time if the project will run a web server (and if so, on which port), `vm.preview.origin` will always be `null` in projects running on [iHub][env_docs]. You can use [`vm.preview.getUrl`](#previewgeturl) instead.
 
 Example:
 
@@ -241,7 +241,7 @@ Gets the current preview URL. Returns a promise resolving to a string or to `nul
 
 The preview URL may not reflect the exact path of the current page if the user or page code has triggered a navigation within the preview iframe.
 
-In WebContainers projects, the preview URL will be `null` initially, and until the project starts a web server.
+In iHub projects, the preview URL will be `null` initially, and until the project starts a web server.
 
 Example:
 
@@ -265,7 +265,7 @@ Changes the path of the preview URL. Returns a promise resolving to `null`.
 
 The provided path must start with `/` and cannot change the origin of the preview URL.
 
-In WebContainers projects, calls to `vm.preview.setUrl` will be ignored if there is no web server running currently.
+In iHub projects, calls to `vm.preview.setUrl` will be ignored if there is no web server running currently.
 
 Example:
 

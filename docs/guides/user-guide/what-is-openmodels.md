@@ -1,6 +1,6 @@
 ---
 title: &title What is OpenModels?
-description: &description OpenModels is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by WebContainers, the first WebAssembly-based operating system which boots Node.js environment in milliseconds, securely within your browser tab.
+description: &description OpenModels is an instant fullstack web IDE for the JavaScript ecosystem. It's powered by iHub, the first WebAssembly-based operating system which boots Node.js environment in milliseconds, securely within your browser tab.
 head:
   - ['meta', {property: 'og:title', content: *title}]
   - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/og/what-is-openmodels.png'}]
@@ -10,7 +10,7 @@ head:
 
 # {{ $frontmatter.title }}
 
-OpenModels is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [WebContainers](https://blog.openmodels.wiki/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+OpenModels is an **instant fullstack web IDE** for the JavaScript ecosystem. It's powered by [iHub](https://blog.openmodels.wiki/posts/introducing-ihub/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
 
 Now you can use the web to build the web.
 
@@ -46,7 +46,7 @@ Working on a blog post or a conference talk? [Create a OpenModels project that y
 
 ### Entire programming workflow
 
-One click and our Codeflow IDE spins up a whole code editor with git integration and hot-reloading preview. Now all you need for your dev work is just a browser.
+One click and our iEcho IDE spins up a whole code editor with git integration and hot-reloading preview. Now all you need for your dev work is just a browser.
 
 ### Straightforward docs editing
 
@@ -58,7 +58,7 @@ Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where
 
 ### Build whole educational experiences
 
-You like the idea of running Node.js in the browser and feel inspired to build your own editor? No worries. Our [WebContainers API](/platform/api/webcontainer-api) allows you to use our technology to power your own playgrounds.
+You like the idea of running Node.js in the browser and feel inspired to build your own editor? No worries. Our [iHub API](/platform/api/webcontainer-api) allows you to use our technology to power your own playgrounds.
 
 ### Rapid prototyping
 

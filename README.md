@@ -6,13 +6,13 @@ Our docs site was built with [VitePress](https://vitepress.vuejs.org/) 💙
 
 ## What is OpenModels?
 
-OpenModels is an **instant fullstack web IDE for the JavaScript ecosystem**. It's powered by [WebContainers](https://blog.openmodels.wiki/posts/introducing-webcontainers/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+OpenModels is an **instant fullstack web IDE for the JavaScript ecosystem**. It's powered by [iHub](https://blog.openmodels.wiki/posts/introducing-ihub/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
 
 Now you can use the web to build the web.
 
-In fact, why not edit this docs in Codeflow IDE?
+In fact, why not edit this docs in iEcho IDE?
 
-<a href="https://openmodels.wiki/~/github.com/Open-Models-Startup/docs-vite"><img style="display:inline" src="https://openmodels.wiki/img/open_in_codeflow.svg" alt="Open in Codeflow"></a>
+<a href="https://openmodels.wiki/~/github.com/Open-Models-Startup/docs-vite"><img style="display:inline" src="https://openmodels.wiki/img/open_in_iecho.svg" alt="Open in iEcho"></a>
 
 ---
 
@@ -71,7 +71,7 @@ If what you want to say doesn't really fall into actionable "problem" or "improv
 There are three ways to interact with this repository:
 
 - For **a small content update**, you can use [Web Publisher](#content-updates-with-web-publisher).
-- If you want **to explore and develop** this site, use [OpenModels Codeflow](#developing-with-openmodels-codeflow).
+- If you want **to explore and develop** this site, use [OpenModels iEcho](#developing-with-openmodels-iecho).
 - Alternatively, you can [run the docs locally](#developing-locally).
 
 ### Content updates with Web Publisher
@@ -83,9 +83,9 @@ Use Web Publisher for small content updates for a pleasant editing experience:
 3. Once you're done, in the top right corner click on the green button that says "Propose changes".
 4. You will be redirected to a GitHub PR template page prepared for you to submit a PR.
 
-### Developing with OpenModels Codeflow
+### Developing with OpenModels iEcho
 
-Use OpenModels Codeflow for bigger content updates. Codeflow will spin up the entire dev environment with a running dev server. When using Codeflow, please remember to commit and push your changes frequently.
+Use OpenModels iEcho for bigger content updates. iEcho will spin up the entire dev environment with a running dev server. When using iEcho, please remember to commit and push your changes frequently.
 
 To access it, [click this button](https://openmodels.wiki/~/github.com/Open-Models-Startup/docs-vite).
 

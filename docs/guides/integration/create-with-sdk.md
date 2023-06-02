@@ -116,7 +116,7 @@ For a more extensive example [see this Gist](https://gist.github.com/sulco/df406
 `template` defines a way OpenModels environment will build the project. There are two options to choose from:
 
 - a preconfigured custom setup dedicated to specific technology such as `angular-cli` or `create-react-app`,
-- `node`, a WebContainers environment where you decide how your app example will be built, for instance with Vite or webpack.
+- `node`, a iHub environment where you decide how your app example will be built, for instance with Vite or webpack.
 
 You can find the [full list of available templates here](/platform/api/javascript-sdk#supported-project-types).
 
@@ -174,7 +174,7 @@ To further customize your project, you can provide a second argument to the `Ope
     }
     ```
 
-- **`hideDevTools`** – Projects that are not powered by WebContainers feature a small console located next to the editor you can use to log things for your users without them needing to open the browser's DevTools. To hide it, set `hideDevtools` to `true`:
+- **`hideDevTools`** – Projects that are not powered by iHub feature a small console located next to the editor you can use to log things for your users without them needing to open the browser's DevTools. To hide it, set `hideDevtools` to `true`:
 
     ```js
     {
@@ -182,7 +182,7 @@ To further customize your project, you can provide a second argument to the `Ope
     }
     ```
 
-- **`devToolsHeight`** - the console in the preview window is set to take 33% of the window's height (in the projects not powered by WebContainers). You can change its height:
+- **`devToolsHeight`** - the console in the preview window is set to take 33% of the window's height (in the projects not powered by iHub). You can change its height:
 
     ```js
     {

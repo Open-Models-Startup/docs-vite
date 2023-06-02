@@ -46,7 +46,7 @@ The Activity Bar allows you to select a view to display in the [sidebar](#side-b
 - [Project](#project-sidebar) - opens the Project sidebar
 - [Search](#search-sidebar) - opens the Search sidebar
 - [Firebase](#firebase-sidebar)  - opens the Firebase sidebar ([EngineBlock][] projects only)
-- [Ports in use](#ports-in-use-sidebar)  - opens the Ports in Use sidebar ([WebContainers][] projects only)
+- [Ports in use](#ports-in-use-sidebar)  - opens the Ports in Use sidebar ([iHub][] projects only)
 - [Settings](#settings-sidebar)  - opens the Settings sidebar
 
 ## Sidebar
@@ -108,7 +108,7 @@ The Editor section of the IDE displays the content of the currently selected fil
   <figcaption>Screenshot: Terminal</figcaption>
 </figure>
 
-**NOTE:** the terminal is only available in the [WebContainers][] projects.
+**NOTE:** the terminal is only available in the [iHub][] projects.
 
 The Terminal allows you to run commands, such as `ls`, `mkdir`, `npm start`, `node index.js`, and others – the same way you would on your local machine.
 
@@ -139,4 +139,4 @@ In the [EngineBlock][] projects the [Preview](#preview) includes a Console. The 
 As an example, see how the RxJS starter project [uses the Console to display a "Hello, World!" message](https://openmodels.wiki/edit/rxjs?devtoolsheight=60).
 
 [EngineBlock]: /guides/user-guide/available-environments
-[WebContainers]: /guides/user-guide/available-environments
+[iHub]: /guides/user-guide/available-environments

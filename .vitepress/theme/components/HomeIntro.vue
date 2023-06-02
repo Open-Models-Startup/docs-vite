@@ -7,8 +7,8 @@ import BooksIcon from './BooksIcon.vue';
     <BooksIcon class="icon" />
     <h1>OpenModels Documentation</h1>
     <p>
-      Discover how to use OpenModels, an online development environment for frontend, Node.js and
-      the JavaScript ecosystem.
+      Welcome to OpenModels, a vibrant community that democratizes AI through accessibility,
+      innovation, and collaboration. Welcome aboard!
     </p>
   </header>
 </template>

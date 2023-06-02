@@ -36,7 +36,7 @@ If you want, you can also specify a branch, tag, or commit:
 Whenever you push commits to GitHub, the corresponding OpenModels project automatically updates with the latest changes ensuring that the code in your GitHub repository remains the source of truth.
 
 :::info Note
-While you can import from GitHub any projects with a `package.json`, the unsupported technologies will not run. This includes backend languages not supported by Node.js (like PHP, Python, or Java), databases like MySQL and PostgreSQL that require a binary server process, and some specific npm packages which are not fully compatible with WebContainers yet.
+While you can import from GitHub any projects with a `package.json`, the unsupported technologies will not run. This includes backend languages not supported by Node.js (like PHP, Python, or Java), databases like MySQL and PostgreSQL that require a binary server process, and some specific npm packages which are not fully compatible with iHub yet.
 :::
 
 ### Defining a launch command
