@@ -34,15 +34,13 @@ There is no greater buzzkill than having to fiddle with the deployment and build
 
 ### Delightful docs
 
-Add interactive examples [from a GitHub repository](/home/integration/open-from-github) or [hook up an existing Qi X Lab project](/home/integration/create-with-sdk) to your docs, blog, or website. Help your users fall in love with your project right from the first try.
-
 ### Interactive playgrounds
 
 Create a [project starter](/home/user-guide/starter-projects) or boilerplate code and let your users taste the full power of your project. Wanna take this a step further? Keep it on a [custom domain](<https://Qi> X Lab.new) so your users can access it even more easily.
 
 ### Quick demos
 
-Working on a blog post or a conference talk? [Create a Qi X Lab project that you can quickly share](/home/integration/embedding). You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
+ You can change the project title and the slug to make it effortless for others to reach it. And yes, it works with Medium or DEV.
 
 ### Entire programming workflow
 
@@ -54,7 +52,7 @@ Every project deserves collaborative documentation. Typo fixes have never been e
 
 ### Effective bug reproductions
 
-Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its [own Qi X Lab reproduction](/home/integration/bug-reproductions) so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
+Plain bug descriptions are so 2010s. Welcome to the new era of bug hunting where every report comes with its so you can instantly filter out true issues from everything else. Never spin up heavy local installations for a simple bug report ever again.
 
 ### Build whole educational experiences
 

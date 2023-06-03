@@ -12,7 +12,7 @@ Now you can use the web to build the web.
 
 In fact, why not edit this docs in RESEARCH IDE?
 
-<a href="https://qixlab.com/~/github.com/Qi-X-Lab/docs-home"><img style="display:inline" src="https://qixlab.com/img/open_in_iecho.svg" alt="Open in RESEARCH"></a>
+<a href="https://qixlab.com/~/github.com/Qi-X-Lab/docs-home"><img style="display:inline" src="https://qixlab.com/img/open_in_research.svg" alt="Open in RESEARCH"></a>
 
 ---
 

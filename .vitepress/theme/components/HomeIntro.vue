@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import BooksIcon from './BooksIcon.vue';
+import BooksIconImage from './img/logo-px.png';
 </script>
 
 <template>
   <header>
     <BooksIcon class="icon" />
     <h1>Qi X Lab</h1>
-    <p>
-      Welcome to Qi X Lab, a vibrant community that democratizes AI through accessibility,
-      innovation, and collaboration. Welcome aboard!
-    </p>
+    <p>Welcome to Qi X Lab, We are Unleashing Nanoscale Wonders for a Quantum Future.</p>
   </header>
 </template>
 

@@ -10,8 +10,8 @@
 
 // Correct max logo height
 .VPNavBarTitle img.logo {
-  height: 20px;
-  margin-inline-end: 12px;
+  height: 90px;
+  margin-inline-end: 120px;
 }
 
 // Fix enormous line-height of navbar items
@@ -40,7 +40,7 @@
 }
 
 #VPSidebarNav .group + .group {
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 .VPSidebarGroup.collapsed {

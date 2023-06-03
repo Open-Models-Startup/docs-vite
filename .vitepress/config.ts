@@ -20,12 +20,12 @@ export default defineConfig({
     lang: 'en-US',
     title: 'Qi X LAB',
     description:
-        "Welcome to Qi X Lab, a vibrant community that democratizes AI through accessibility, innovation, and collaboration. Welcome aboard!",
+        "Welcome to Qi X Lab, We are Unleashing Nanoscale Wonders for a Quantum Future",
     head: getHeadTags(process.env),
 
     // Theme
     themeConfig: {
-        siteTitle: 'Qi X LAB',
+        siteTitle: '',
         logo: '/img/theme/docs-logo.svg',
         algolia: getAlgoliaConfig(process.env),
         editLink: {
@@ -33,16 +33,18 @@ export default defineConfig({
             text: 'Edit this page',
         },
         nav: [
-            { text: 'HOME', link: defaultGroupLink('userGuide') },
+            { text: 'HOME', link: defaultGroupLink('home') },
             { text: 'RESEARCH', link: defaultGroupLink('research') },
             { text: 'PUBLISH', link: defaultGroupLink('publish') },
+            { text: 'COURSE', link: defaultGroupLink('course') },
             { text: 'NEWSROOM', link: defaultGroupLink('newsroom') }, { text: 'CAREER', link: defaultGroupLink('career') },
             { text: 'COOPERATIONS', link: defaultGroupLink('cooperations') },
         ],
         sidebar: {
-            '/home/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
+            '/home/': sidebarLinks('main', ['home']),
             '/research/': sidebarLinks('main', ['research']),
-            '/platform/api/': sidebarLinks('main', ['api']),
+            '/course/': sidebarLinks('main', ['course']),
+            '/platform/career/': sidebarLinks('main', ['career']),
             '/platform/publish/': sidebarLinks('main', ['publish']),
             '/platform/newsroom/': sidebarLinks('main', ['newsroom']),
             '/cooperations/': sidebarLinks('cooperations', ['cooperations']),

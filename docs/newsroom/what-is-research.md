@@ -38,7 +38,7 @@ Qi X Lab now helps you switch contexts seamlessly:
 
 Excited to try it yourself? Try these:
 
-- 📝 Take Web Publisher for a spin by adding your name to [iloveiecho.com](https://iloveiecho.com/)!
+- 📝 Take Web Publisher for a spin by adding your name to [iloveresearch.com](https://iloveresearch.com/)!
 - 💻 Explore how we built [this docs site](https://pr.new/github.com/Qi-X-Lab/docs-home) in RESEARCH IDE!
 - 🕵️ Review [this suspicious PR](https://pr.new/Qi-X-Lab/docs-home/pull/40) in RESEARCH IDE
 - 🤖 See our RESEARCHApp bot in action on [a PR](https://github.com:Qi-X-Lab/docs-home/pull/40#issue-1404169268)!

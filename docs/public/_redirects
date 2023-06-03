@@ -4,9 +4,7 @@
 /cooperations   /cooperations/overview
 /home   /home/user-guide/what-is-qixlab
 /home/user-guide  /home/user-guide/what-is-qixlab
-/home/integration   /home/integration/embedding
 /platform   /
-/platform/api   /platform/api/javascript-sdk
 /platform/publish   /platform/publish/browser-support
 
 # Pages recently removed or renamed
@@ -37,13 +35,9 @@
 /docs/cooperations/sso/   /cooperations/sso
 /docs/cooperations/starter-projects/   /cooperations/starter-projects
 /docs/cooperations/user-management/   /cooperations/user-management
-/docs/guide/bug-reproductions/   /home/integration/bug-reproductions
-/docs/guide/create-with-sdk/   /home/integration/create-with-sdk
-/docs/guide/open-from-github/   /home/integration/open-from-github
 /docs/platform/available-environments/   /home/user-guide/available-environments
 /docs/platform/brave-support/   /platform/publish/browser-config-brave
 /docs/platform/browser-support/   /platform/publish/browser-support
-/docs/platform/embedding/   /home/integration/embedding
 /docs/platform/getting-started/   /home/user-guide/getting-started
 /docs/platform/ide-whats-on-your-screen/   /home/user-guide/ide-whats-on-your-screen
 /docs/platform/importing-projects/   /home/user-guide/importing-projects

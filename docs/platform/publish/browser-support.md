@@ -82,6 +82,6 @@ Older Safari versions are not suported. They lack a few necessary Web Platform f
 
 ## Embedding
 
-Projects based on PUBLISH can be [embedded](/home/integration/embedding) as any other Qi X Lab project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
+Projects based on PUBLISH can be as any other Qi X Lab project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
 
 For that reason, we only support embedding PUBLISH-based projects in **Chromium-based browsers**.

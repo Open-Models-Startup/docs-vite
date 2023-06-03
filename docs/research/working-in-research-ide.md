@@ -71,7 +71,7 @@ Moreover, you will also see that dot on the tab in your browser to remind you th
 
 ## Making a PR with RESEARCH IDE
 
-Let's add a file to [iloveiecho.com](<https://github.com/Qi> X Lab/iloveiecho.com).
+Let's add a file to [iloveresearch.com](<https://github.com/Qi> X Lab/iloveresearch.com).
 
 Follow these steps:
 

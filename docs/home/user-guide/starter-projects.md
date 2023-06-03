@@ -30,5 +30,3 @@ Open Source projects can provide a custom URL as a convenient starting point for
 <StarterGrid :links="dotNewLinks" />
 
 ## Adding a new starter project
-
-If you'd like to see a new starter, please follow the directions on [this page in the integration guide](/home/integration/open-from-github#set-up-the-main-starter-url).

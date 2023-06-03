@@ -12,8 +12,6 @@ head:
 
 This page outlines how you can use Qi X Lab to create quick demos or bug reproductions in Qi X Lab classic editor or to open a GitHub repository in RESEARCH IDE.
 
-If you wish to immediately embed your project on your page check a page on manual [embeds](/home/integration/embedding) and [SDK embeds](/platform/api/javascript-sdk). If you wish to learn how to import your project from GitHub, check the page on [importing projects](/home/user-guide/importing-projects).
-
 ## Picking a starter project
 
 To start coding, navigate to the [Qi X Lab homepage](https://qixlab.com/). If you are not logged in, scroll down a bit to find a list of starter projects to choose from:
@@ -77,13 +75,5 @@ Alternatively, you can also import a new repository and see the full list of you
 ## Using Qi X Lab on your site
 
 If you’re writing a blog, maintaining a documentation site or an open source project, you can use Qi X Lab to:
-
-1. [Embed examples and demos](/home/integration/embedding) on your page or in your blog posts.
-2. [Add “Open in Qi X Lab” buttons](/home/integration/open-from-github) to your READMEs and docs.
-3. [Generate custom projects on the fly](/home/integration/create-with-sdk) with our JavaScript SDK.
-4. [Use Qi X Lab reproductions in GitHub](/home/integration/bug-reproductions) bug issue templates!
-5. [Make PR reviews safer and faster](https://qixlab.com/research/integrating-researchapp-bot) with RESEARCHApp bot.
-6. [Help your users edit your docs with live preview](https://qixlab.com/research/content-updates-with-web-publisher) using Web Publisher.
-7. [Provide a one-click environment with RESEARCH IDE](https://qixlab.com/research/using-pr-new) so other developers can submit bug fixes without setting up the local environment.
 
 Happy coding!

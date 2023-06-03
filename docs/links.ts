@@ -2,12 +2,12 @@
 // Link Groups / Sidebar
 
 type LinkGroup =
-    | 'api'
+    | 'career'
     | 'research'
     | 'newsroom'
     | 'cooperations'
-    | 'integrationGuide'
-    | 'userGuide'
+    | 'home'
+    | 'course'
     | 'publish';
 
 interface LinkItem {
@@ -17,7 +17,7 @@ interface LinkItem {
 }
 
 const groupLinks: Record<LinkGroup, LinkItem[]> = {
-    userGuide: [
+    home: [
         { text: 'What is Qi X Lab', link: '/home/user-guide/what-is-qixlab' },
         { text: 'Getting started', link: '/home/user-guide/getting-started' },
         { text: 'Starter projects', link: '/home/user-guide/starter-projects' },
@@ -27,12 +27,6 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
         { text: 'Collections', link: '/home/user-guide/collections' },
         { text: 'Keyboard shortcuts', link: '/home/user-guide/keyboard-shortcuts' },
     ],
-    integrationGuide: [
-        { text: 'Embedding projects', link: '/home/integration/embedding' },
-        { text: 'Launching projects from GitHub', link: '/home/integration/open-from-github' },
-        { text: 'Creating projects with the SDK', link: '/home/integration/create-with-sdk' },
-        { text: 'Bug reproductions', link: '/home/integration/bug-reproductions' },
-    ],
     research: [
         { text: 'What is RESEARCH?', link: '/research/what-is-research' },
         { text: 'Using pr.new', link: '/research/using-pr-new' },
@@ -41,9 +35,18 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
         {
             text: 'Content updates with Web Publisher',
             link: '/research/content-updates-with-web-publisher',
+        }],
+    course: [
+        { text: 'What is Course?', link: '/course/what-is-course' },
+        { text: 'Using pr.new', link: '/course/using-pr-new' },
+        { text: 'Working in Course', link: '/research/working-in-courese-ide' },
+        { text: 'Integrating Course bot', link: '/course/integrating-courseapp-bot' },
+        {
+            text: 'Content updates with Web Publisher',
+            link: '/course/content-updates-with-web-publisher',
         },
-        { text: 'Integrating Web Publisher', link: '/research/integrating-web-publisher' },
-        { text: 'RESEARCH FAQ', link: '/research/research-faq' },
+        { text: 'Integrating Web Publisher', link: '/course/integrating-web-publisher' },
+        { text: 'COURSE FAQ', link: '/course/course-faq' },
     ],
 
     publish: [
@@ -95,13 +98,9 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
 };
 
 const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
-    userGuide: {
-        text: 'User Guide',
-        items: groupLinks.userGuide,
-    },
-    integrationGuide: {
-        text: 'Integration Guide',
-        items: groupLinks.integrationGuide,
+    home: {
+        text: 'HOME',
+        items: groupLinks.home,
     },
     research: {
         text: 'RESEARCH',
@@ -111,17 +110,21 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
         text: 'PUBLISH',
         items: groupLinks.publish,
     },
+    course: {
+        text: 'COURSE',
+        items: groupLinks.course,
+    },
     newsroom: {
         text: 'NEWSROOM',
         items: groupLinks.newsroom,
     },
-    cooperations: {
-        text: 'COOPERATIONS Edition',
-        items: groupLinks.cooperations,
-    },
     career: {
-        text: 'Qi X Lab Career',
+        text: 'CAREERS',
         items: groupLinks.career,
+    },
+    cooperations: {
+        text: 'COOPERATIONS',
+        items: groupLinks.cooperations,
     },
 };
 
@@ -149,7 +152,7 @@ export const sidebarLinks = (
 export const homeTopLinks = [
     {
         icon: '/icons/fa-file-import.svg',
-        title: 'Get Started',
+        title: 'HOME',
         description:
             'Explore the full potential of Qi X Lab: from writing code or spinning quick demos to making your docs delightful.',
         url: '/home/user-guide/what-is-qixlab',
@@ -163,10 +166,10 @@ export const homeTopLinks = [
     },
     {
         icon: '/icons/fa-brackets-curly.svg',
-        title: 'CAREER Opportunity',
+        title: 'CAREERS',
         description:
             'Embed GitHub repos, create new projects, build educational experiences, all programmatically with our SDK.',
-        url: '/platform/api/javascript-sdk',
+        url: '/platform/career/javascript-sdk',
     },
     {
         icon: '/icons/fa-gear.svg',
@@ -177,14 +180,14 @@ export const homeTopLinks = [
     },
     {
         icon: '/icons/fa-life-ring.svg',
-        title: 'Integrating Qi X Lab',
+        title: 'COURSE',
         description:
             'Follow home on building interactive playgrounds, improving bug repros, and using Qi X Lab for tech education.',
-        url: '/home/integration/open-from-github',
+        url: '/course/what-is-course',
     },
     {
         icon: '/icons/fa-users.svg',
-        title: 'COOPERATIONS Edition',
+        title: 'COOPERATIONS',
         description:
             'Run Qi X Lab behind your firewall, on new or existing Kubernetes clusters, with options for air gapping and SSO.',
         url: '/cooperations/overview',
@@ -217,47 +220,42 @@ export const homeExternalLinks = [
 
 export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
     {
-        title: 'Workspaces',
+        title: 'Press',
         items: [
-            { text: 'Popular', link: 'https://qixlab.com/?starters=popular' },
-            { text: 'Frontend', link: 'https://qixlab.com/?starters=frontend' },
-            { text: 'Backend', link: 'https://qixlab.com/?starters=backend' },
-            { text: 'Fullstack', link: 'https://qixlab.com/?starters=fullstack' },
-            { text: 'Vite', link: 'https://qixlab.com/?starters=vite' },
-            { text: 'Docs, Blogs & Slides', link: 'https://qixlab.com/?starters=docs' },
-            { text: 'Vanilla', link: 'https://qixlab.com/?starters=vanilla' },
+            { text: 'Publish', link: 'https://qixlab.com/?starters=docs' },
+            { text: 'Blogs', link: 'https://qixlab.com/?starters=docs' },
+            { text: 'Slides', link: 'https://qixlab.com/?starters=docs' },
         ],
     },
     {
-        title: 'Start a new Project',
+        title: 'Lab Project',
         items: [
             { text: 'From a Workspace', link: 'https://qixlab.com/?starters=popular' },
             {
-                text: 'From a GitHub Repo',
+                text: 'From a GitHub',
                 link: '/home/user-guide/importing-projects#import-from-github',
             },
             {
-                text: 'From your computer',
+                text: 'From your Computer',
                 link: '/home/user-guide/importing-projects#upload-from-your-computer',
             },
         ],
     },
     {
-        title: 'Product',
+        title: 'Service',
         items: [
-            { text: 'Docs', link: 'https://qixlab.com/' },
-            { text: 'COOPERATIONS', link: 'https://qixlab.com/cooperations' },
-            { text: 'Pricing', link: 'https://qixlab.com/membership' },
+            { text: 'Open Course', link: 'https://qixlab.com/' },
+            { text: 'Cooperations', link: 'https://qixlab.com/cooperations' },
+            { text: 'Education', link: 'https://qixlab.com/membership' },
             { text: 'Case Studies', link: 'https://qixlab.com/case-studies/google' },
         ],
     },
     {
-        title: 'Company',
+        title: 'Oppertunity',
         items: [
-            { text: 'Blog', link: 'https://blog.qixlab.com/' },
+            { text: 'News', link: 'https://blog.qixlab.com/' },
             { text: 'Careers', link: 'https://qixlab.com/careers' },
             { text: 'Community', link: 'https://discord.gg/Qi X Lab' },
-            { text: 'COOPERATIONS Sales', link: 'https://qixlab.com/cooperations-contact' },
             { text: 'Privacy', link: 'https://qixlab.com/privacy-policy' },
             { text: 'Terms of Service', link: 'https://qixlab.com/terms-of-service' },
         ],
@@ -265,9 +263,9 @@ export const footerSections: Array<{ title: string; items: LinkItem[] }> = [
     {
         title: 'Connect',
         items: [
-            { text: 'GitHub', link: 'https://github.com/Qi X Lab/core' },
-            { text: 'Twitter', link: 'https://twitter.com/Qi X Lab' },
-            { text: 'Discord', link: 'https://discord.gg/Qi X Lab' },
+            { text: 'GitHub', link: 'https://github.com/Qi-X-Lab' },
+            { text: 'Twitter', link: 'https://twitter.com/QiXLab' },
+            { text: 'Email', link: 'https://twitter.com/QiXLab' },
         ],
     },
 ];
