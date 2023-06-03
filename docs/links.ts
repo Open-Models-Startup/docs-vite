@@ -28,10 +28,10 @@ const groupLinks: Record<LinkGroup, LinkItem[]> = {
         { text: 'Keyboard shortcuts', link: '/home/user-guide/keyboard-shortcuts' },
     ],
     research: [
-        { text: 'What is RESEARCH?', link: '/research/what-is-research' },
+        { text: 'What is Research?', link: '/research/what-is-research' },
         { text: 'Using pr.new', link: '/research/using-pr-new' },
-        { text: 'Working in RESEARCH IDE', link: '/research/working-in-research-ide' },
-        { text: 'Integrating RESEARCHApp bot', link: '/research/integrating-researchapp-bot' },
+        { text: 'Working in Research IDE', link: '/research/working-in-research-ide' },
+        { text: 'Integrating ResearchApp bot', link: '/research/integrating-researchapp-bot' },
         {
             text: 'Content updates with Web Publisher',
             link: '/research/content-updates-with-web-publisher',
@@ -103,7 +103,7 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
         items: groupLinks.home,
     },
     research: {
-        text: 'RESEARCH',
+        text: 'Research',
         items: groupLinks.research,
     },
     publish: {
@@ -115,7 +115,7 @@ const linkGroups: Record<LinkGroup, { text: string; items: LinkItem[] }> = {
         items: groupLinks.course,
     },
     newsroom: {
-        text: 'NEWSROOM',
+        text: 'NEWS',
         items: groupLinks.newsroom,
     },
     career: {
@@ -159,7 +159,7 @@ export const homeTopLinks = [
     },
     {
         icon: '/icons/fa-browser.svg',
-        title: 'RESEARCH',
+        title: 'Research',
         description:
             'One click opens a full in-browser IDE for your repos, issues, and PRs. No more cloning, installing, stashing!',
         url: '/research/what-is-research',

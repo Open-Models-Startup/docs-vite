@@ -37,7 +37,7 @@ export default defineConfig({
             { text: 'RESEARCH', link: defaultGroupLink('research') },
             { text: 'PUBLISH', link: defaultGroupLink('publish') },
             { text: 'COURSE', link: defaultGroupLink('course') },
-            { text: 'NEWSROOM', link: defaultGroupLink('newsroom') }, { text: 'CAREER', link: defaultGroupLink('career') },
+            { text: 'NEWS', link: defaultGroupLink('newsroom') }, { text: 'CAREER', link: defaultGroupLink('career') },
             { text: 'COOPERATIONS', link: defaultGroupLink('cooperations') },
         ],
         sidebar: {

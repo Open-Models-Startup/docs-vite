@@ -1,6 +1,6 @@
 ---
-title: &title Configuring your browser to run NEWSROOM
-description: &description Some browser settings can stop NEWSROOM from running correctly. You can work around those issues by adding exceptions for Qi X Lab domains in your browser’s settings.
+title: &title Configuring your browser to run NEWS
+description: &description Some browser settings can stop NEWS from running correctly. You can work around those issues by adding exceptions for Qi X Lab domains in your browser’s settings.
 head:
   - ['meta', {property: 'og:title', content: *title}] 
   - ['meta', {property: 'og:image', content: 'https://qixlab.com/img/og/webcontainer-browser-configuration.png'}]
@@ -10,15 +10,15 @@ head:
 
 # {{ $frontmatter.title }}
 
-While [all supported browsers](/platform/newsroom/browser-support) can run NEWSROOM, some browser options can stop NEWSROOM from running correctly.
+While [all supported browsers](/platform/newsroom/browser-support) can run NEWS, some browser options can stop NEWS from running correctly.
 
 You can work around those issues by adding exceptions for Qi X Lab domains in your browser’s settings. Here’s how.
 
 ## Why do I need to add exceptions for Qi X Lab?
 
-NEWSROOM use a combination of browser technologies, such as [Service Worker][MDN_SERVICE_WORKER] and [WebAssembly][MDN_WEB_ASSEMBLY], across several domains. Each running project has its own domain and needs to install a Service Worker for that domain to work properly.
+NEWS use a combination of browser technologies, such as [Service Worker][MDN_SERVICE_WORKER] and [WebAssembly][MDN_WEB_ASSEMBLY], across several domains. Each running project has its own domain and needs to install a Service Worker for that domain to work properly.
 
-In some browsers, this feature is blocked by “third-party cookie” or “third-party storage” restrictions. These are legitimate restrictions when the third-party domain is an ad server or a tracking server, but in the case of NEWSROOM the third-party domain is where your project code runs.
+In some browsers, this feature is blocked by “third-party cookie” or “third-party storage” restrictions. These are legitimate restrictions when the third-party domain is an ad server or a tracking server, but in the case of NEWS the third-party domain is where your project code runs.
 
 ## Chrome: enabling Service Workers {#chrome-service-workers}
 
@@ -53,13 +53,13 @@ In Chrome, click the lock icon in the navigation bar:
 
 If that is the case, choose to “Allow” cookies for those third-party domains. After that, the browser will prompt you to reload the page and you will be able to run the current project.
 
-Note that the list of blocked domains might look different for you. In particular, a `xyz.local.webcontainer.io` domain might not be present. NEWSROOM-based projects use different domains dynamically, depending on what the runtime is doing (for instance, whether it is serving HTTP content or not), so you might need to check the list of blocked domains later if you see something off again.
+Note that the list of blocked domains might look different for you. In particular, a `xyz.local.webcontainer.io` domain might not be present. NEWS-based projects use different domains dynamically, depending on what the runtime is doing (for instance, whether it is serving HTTP content or not), so you might need to check the list of blocked domains later if you see something off again.
 
 :::
 
 ## Firefox: enabling Service Workers {#firefox-service-workers}
 
-When Firefox’s Enhanced Tracking Protection is configured in “Custom” mode with the cookie blocking option set to “All cross-site cookies”, Firefox will block the Service Workers used by NEWSROOM.
+When Firefox’s Enhanced Tracking Protection is configured in “Custom” mode with the cookie blocking option set to “All cross-site cookies”, Firefox will block the Service Workers used by NEWS.
 
 You can work around this issue in a couple ways:
 
@@ -93,11 +93,11 @@ Don’t forget to click “Save Changes”. Then you should be able to reload th
 
 By default, Brave’s “Shields” feature blocks [Service Workers][MDN_SERVICE_WORKER] and cookies from third-party domains.
 
-To allow NEWSROOM to run in Brave, you will need to add an exception for Qi X Lab:
+To allow NEWS to run in Brave, you will need to add an exception for Qi X Lab:
 
-1. Visit a NEWSROOM-based project, for instance <https://qixlab.com/edit/nextjs>. The project’s boot sequence might stay stuck on the “Running start command” step:
+1. Visit a NEWS-based project, for instance <https://qixlab.com/edit/nextjs>. The project’s boot sequence might stay stuck on the “Running start command” step:
 
-![Screenshot of Brave on a NEWSROOM project with the Brave Shields feature on. Loading the project’s web server is stuck on the last step.](./assets/brave-stuck-project.png)
+![Screenshot of Brave on a NEWS project with the Brave Shields feature on. Loading the project’s web server is stuck on the last step.](./assets/brave-stuck-project.png)
 
 2. Click on the “Shields” icon at the right of the address bar, then click on “Advanced View”.
 
@@ -109,7 +109,7 @@ To allow NEWSROOM to run in Brave, you will need to add an exception for Qi X La
 
 Brave will reload the page, and you should get a working project:
 
-![Screenshot of Brave on a NEWSROOM project with the Brave Shields feature tweaked to allow third-party cookies and Service Workers. Loading the web server works, and shows the default page for Next.js’s starter project.](./assets/brave-working-project.png)
+![Screenshot of Brave on a NEWS project with the Brave Shields feature tweaked to allow third-party cookies and Service Workers. Loading the web server works, and shows the default page for Next.js’s starter project.](./assets/brave-working-project.png)
 
 ## Edge: enabling WebAssembly {#edge-webassembly}
 

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import BooksIcon from './BooksIcon.vue';
-import BooksIconImage from './img/logo-px.png';
 </script>
 
 <template>

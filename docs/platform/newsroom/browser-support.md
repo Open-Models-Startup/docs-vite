@@ -1,6 +1,6 @@
 ---
-title: &title NEWSROOM Browser Support
-description: &description NEWSROOM are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
+title: &title NEWS Browser Support
+description: &description NEWS are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
 head:
   - ['meta', {property: 'og:title', content: *title}]
   - ['meta', {property: 'og:image', content: 'https://qixlab.com/img/og/webcontainer-browser-support.png'}]
@@ -14,7 +14,7 @@ _Last update: February 2023_
 
 ## Supported browsers
 
-NEWSROOM are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
+NEWS are supported in all recent desktop browsers (fully in Chrome and Chrome-based browsers, in beta in Firefox and Safari), and partially supported on Android browsers.
 
 ### Desktop browsers
 
@@ -30,7 +30,7 @@ NEWSROOM are supported in all recent desktop browsers (fully in Chrome and Chrom
 
 ## Web Platform requirements
 
-Qi X Lab requires some of the latest additions to the Web Platform to work correctly when running NEWSROOM-based projects. Most important among them are **`SharedArrayBuffer`** and **cross-origin isolation**.
+Qi X Lab requires some of the latest additions to the Web Platform to work correctly when running NEWS-based projects. Most important among them are **`SharedArrayBuffer`** and **cross-origin isolation**.
 
 ### Cross-origin isolation
 
@@ -46,21 +46,21 @@ You can read more about [cross-origin isolation on our blog](https://blog.qixlab
 
 ### JS engine differences
 
-Note that there might be minor differences in the behavior of NEWSROOM in browsers that are not based on Chromium. After all, NEWSROOM strive for maximum compatibility with Node.js, which itself is based on [V8](https://v8.dev/), Chromium's own JavaScript engine. Node.js very much relies on some specific features of V8, which are not part of the established JavaScript standards. Because of that, it is easier to achieve a higher degree of compatibility in a Chromium-based browser, which _also_ runs on top of V8.
+Note that there might be minor differences in the behavior of NEWS in browsers that are not based on Chromium. After all, NEWS strive for maximum compatibility with Node.js, which itself is based on [V8](https://v8.dev/), Chromium's own JavaScript engine. Node.js very much relies on some specific features of V8, which are not part of the established JavaScript standards. Because of that, it is easier to achieve a higher degree of compatibility in a Chromium-based browser, which _also_ runs on top of V8.
 
 ## Chrome
 
-NEWSROOM are fully supported in Chrome and most Chromium-based browsers including Brave, Edge, Vivaldi, and others.
+NEWS are fully supported in Chrome and most Chromium-based browsers including Brave, Edge, Vivaldi, and others.
 
-However, if you enabled blocking third-party cookies in Chrome preferences, this may prevent NEWSROOM from working out of the box.
+However, if you enabled blocking third-party cookies in Chrome preferences, this may prevent NEWS from working out of the box.
 
-If you think you’re running into this issue, check out [how to configure Chrome to run NEWSROOM](/platform/newsroom/browser-config#chrome-service-workers).
+If you think you’re running into this issue, check out [how to configure Chrome to run NEWS](/platform/newsroom/browser-config#chrome-service-workers).
 
 ## Brave
 
-Brave is a Chromium-based browser and supports NEWSROOM well but it ships with a more aggressive third-party blocking by default which tends to stop NEWSROOM from running.
+Brave is a Chromium-based browser and supports NEWS well but it ships with a more aggressive third-party blocking by default which tends to stop NEWS from running.
 
-Learn [how to configure Brave to run NEWSROOM](/platform/newsroom/browser-config#brave-service-workers).
+Learn [how to configure Brave to run NEWS](/platform/newsroom/browser-config#brave-service-workers).
 
 ## Firefox
 
@@ -82,6 +82,6 @@ Older Safari versions are not suported. They lack a few necessary Web Platform f
 
 ## Embedding
 
-Projects based on NEWSROOM can be as any other Qi X Lab project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
+Projects based on NEWS can be as any other Qi X Lab project. However, the [restrictions detailed above](#web-platform-requirements) hit harder when embedding a project since we no longer control the headers under which the _embedding_ content is served.
 
-For that reason, we only support embedding NEWSROOM-based projects in **Chromium-based browsers**.
+For that reason, we only support embedding NEWS-based projects in **Chromium-based browsers**.
