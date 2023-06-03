@@ -52,31 +52,11 @@ You will be redirected to [course IDE](./working-in-course-ide) in the ["PR revi
 
 To help your users quickly spin up the entire environment with your project, you can add a CTA (call-to-action) button on your website or in the README file with any of the above pr.new links.
 
-| Button preview | Direct URL |
-| --- | --- |
-| <img alt="Open in course" src="/img/open_in_course.svg" /> | <a href="/img/open_in_course.svg" target="_blank">open_in_course.svg</a> |
-| <img alt="Open in course" src="/img/open_in_course_small.svg" /> | <a href="/img/open_in_course_small.svg" target="_blank">open_in_course_small.svg</a> |
-
 ::: tip
 You can either host the images on your servers or directly use our image URLs.
 :::
 
 In order to display the button in a **Markdown file**, use the following code - remember to update the last URL with the project repository path:
-
-```md
-[![Open in course](https://qixlab.com/img/open_in_course.svg)](https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___)
-```
-
-Or, in HTML:
-
-```html
-<a href="https:///pr.new/___GH_ACCOUNT__/___GH_REPOSITORY___">
-  <img
-    alt="Open in course"
-    src="https://qixlab.com/img/open_in_course.svg"
-  />
-</a>
-```
 
 If the user is logged in at GitHub and Qi X Lab (in beta), course IDE will open up. No further configuration is needed.
 
