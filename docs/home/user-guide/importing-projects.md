@@ -100,5 +100,3 @@ The video below outlines a workaround to edit collaboratively in a private repo:
 <iframe src="https://www.loom.com/embed/54c9f65e05494b00b6aa1bb9e0bbe7ab" style="width: 100%; height: 400px;"></iframe>
 
 ## Importing or creating projects with Qi X Lab API
-
-You can create new Qi X Lab projects programmatically from any data source using our [POST API](/platform/api/post-api) or the [openProject](/platform/api/javascript-sdk#openproject) and [embedProject](/platform/api/javascript-sdk#embedproject) methods in our [JavaScript SDK](/platform/api/javascript-sdk).

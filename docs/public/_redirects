@@ -41,17 +41,12 @@
 /docs/platform/getting-started/   /home/user-guide/getting-started
 /docs/platform/ide-whats-on-your-screen/   /home/user-guide/ide-whats-on-your-screen
 /docs/platform/importing-projects/   /home/user-guide/importing-projects
-/docs/platform/javascript-sdk-dependencies/   /platform/api/javascript-sdk-dependencies
-/docs/platform/javascript-sdk-vm/   /platform/api/javascript-sdk-vm
-/docs/platform/javascript-sdk/   /platform/api/javascript-sdk
 /docs/platform/keyboard-shortcuts/   /home/user-guide/keyboard-shortcuts
-/docs/platform/post-api/   /platform/api/post-api
 /docs/platform/project-config/   /platform/publish/project-config
 /docs/platform/project-starters/   /home/user-guide/starter-projects
 /docs/platform/starter-projects/   /home/user-guide/starter-projects
 /docs/platform/third-party-blocker/   /platform/publish/browser-config
 /docs/platform/turbo/   /platform/publish/turbo-package-manager
-/docs/platform/webcontainer-api/   /platform/api/
 /docs/platform/what-is-qixlab/   /home/user-guide/what-is-qixlab
 
 # Older redirects, can maybe be removed?
