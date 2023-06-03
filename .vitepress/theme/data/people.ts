@@ -27,7 +27,7 @@ export const people: { [key in PeopleKeys]: Person } = {
         href: 'https://twitter.com/ericsimons40',
         hrefAlias: 'ericsimons40',
         imgPath: '/img/people/eric_simons.jpg',
-        title: 'CEO, OpenModels'
+        title: 'CEO, Qi X Lab'
     },
     RICH_HARRIS: {
         name: 'Rich Harris',
@@ -41,6 +41,6 @@ export const people: { [key in PeopleKeys]: Person } = {
         href: 'https://twitter.com/sylwiavargas',
         hrefAlias: 'sylwiavargas',
         imgPath: '/img/people/sylwia_vargas.jpg',
-        title: 'Developer Advocate, OpenModels'
+        title: 'Developer Advocate, Qi X Lab'
     },
 };

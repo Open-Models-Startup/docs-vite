@@ -5,11 +5,8 @@ import BooksIcon from './BooksIcon.vue';
 <template>
   <header>
     <BooksIcon class="icon" />
-    <h1>OpenModels Documentation</h1>
-    <p>
-      Welcome to OpenModels, a vibrant community that democratizes AI through accessibility,
-      innovation, and collaboration. Welcome aboard!
-    </p>
+    <h1>Qi X Lab</h1>
+    <p>Welcome to Qi X Lab, We are Unleashing Nanoscale Wonders for a Quantum Future.</p>
   </header>
 </template>
 

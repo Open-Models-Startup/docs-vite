@@ -19,13 +19,13 @@ There are numerous ways to contribute to docs:
 
 - **Share feedback**
   - Each docs page features a feedback tool at the bottom - you can use it to let us know what you think!
-  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com:Open-Models-Startup/docs-vite/issues) and if not, feel free to [create one](https://github.com:Open-Models-Startup/docs-vite/issues/new).
+  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com:Qi-X-Lab/docs-home/issues) and if not, feel free to [create one](https://github.com:Qi-X-Lab/docs-home/issues/new).
 - **Share ideas**
-  - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com:Open-Models-Startup/docs-vite/discussions).
+  - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com:Qi-X-Lab/docs-home/discussions).
 - **Fix typos**
   - Use [Web Publisher](#content-updates-with-web-publisher) for a quick typo fix!
 - **Create demos**
-  - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read this contributing guide through and reach out to us on [GitHub discussions](https://github.com:Open-Models-Startup/docs-vite/discussions).
+  - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read this contributing guide through and reach out to us on [GitHub discussions](https://github.com:Qi-X-Lab/docs-home/discussions).
 - **Fix an issue**
   - You see an issue you'd like to worn on? Ask to be assigned to fix it. Before you start your work, please read this contributing guide entirely.
 - **Reviews**
@@ -53,7 +53,7 @@ Please raise issues in situations like the following:
 - compromised accessibility,
 - anything broken: demo, page, url, image,
 
-If what you want to say doesn't really fall into actionable "problem" or "improvement", you can **start a new [GitHub discussions](https://github.com:Open-Models-Startup/docs-vite/discussions) topic**. For example, feel free to ask:
+If what you want to say doesn't really fall into actionable "problem" or "improvement", you can **start a new [GitHub discussions](https://github.com:Qi-X-Lab/docs-home/discussions) topic**. For example, feel free to ask:
 
 - Could we split this page into multiple smaller steps?
 - This navigation item doesn't fit where it is - could we move it somewhere else?
@@ -68,13 +68,13 @@ If what you want to say doesn't really fall into actionable "problem" or "improv
 
 Except for small typo fixes and content updaets, the starting point for contributing is always an issue.
 
-**If you see that something is wrong**, you can [check to see if the issue already exists](https://github.com:Open-Models-Startup/docs-vite/issues), and if it does, leave a comment saying you'd like to work on it and when you have time to do that - and our team member will assign you. In case the issue doesn't yet exist, feel free to [create one](https://github.com:Open-Models-Startup/docs-vite/issues/new). Before doing that, please see [what makes a good issue](#what-makes-a-good-issue). A docs team member will triage incoming issues and assign labels.
+**If you see that something is wrong**, you can [check to see if the issue already exists](https://github.com:Qi-X-Lab/docs-home/issues), and if it does, leave a comment saying you'd like to work on it and when you have time to do that - and our team member will assign you. In case the issue doesn't yet exist, feel free to [create one](https://github.com:Qi-X-Lab/docs-home/issues/new). Before doing that, please see [what makes a good issue](#what-makes-a-good-issue). A docs team member will triage incoming issues and assign labels.
 
 **If you don't have any specific issue you'd like to work on**, you can browse available ones. Please note that we use [issue labels](#issue-labels-we-use) so you can modify your search. After you've found an issue you'd like to work on, leave a comment and tell us when you have time to do that. A docs team member will assign you.
 
 ### 2. **Work on the issue**
 
-Once assigned to an issue, choose [the right tool for the job](README.md#development) - you may want to use Web Publisher, iEcho, or develop locally. We have no preference.
+Once assigned to an issue, choose [the right tool for the job](README.md#development) - you may want to use Web Publisher, RESEARCH, or develop locally. We have no preference.
 
 Whenever in doubt or whenever you feel stuck, please ask clarifying questions in the issue thread or on our [Discord](https://discord.gg/EQ7uJQxC). We are here to support you!
 
@@ -82,7 +82,7 @@ In most cases, an assigned issue should be fixed relatively soon (depending on t
 
 ### 3. **Use inclusive language and adhere to accessibility requirements**
 
-Inclusion and respect are core tenets of our [Code of Conduct](https://github.com:Open-Models-Startup/docs-vite/CODE_OF_CONDUCT.md). We expect thoughtful language and decisions all the way down to the code. For example, some technical metaphors are alienating or triggering. We ask that contributors go the extra mile to submit code and content which is inclusive in nature.
+Inclusion and respect are core tenets of our [Code of Conduct](https://github.com:Qi-X-Lab/docs-home/CODE_OF_CONDUCT.md). We expect thoughtful language and decisions all the way down to the code. For example, some technical metaphors are alienating or triggering. We ask that contributors go the extra mile to submit code and content which is inclusive in nature.
 
 If you unintentionally use language deemed harmful or choose an inaccessible solution, there is no shame. We will work together to find a better alternative.
 
@@ -112,23 +112,23 @@ Our issues are divided by difficulty, domain, and type.
 
 **DIFFICULTY**:
 
-- [good first issue](https://github.com:Open-Models-Startup/docs-vite/labels/good%20first%20issue): issues are meant for newer developers, new writers, and new editors - or folks just starting out in open source.
-- [difficulty: easy](https://github.com:Open-Models-Startup/docs-vite/labels/Difficulty%3A%20easy): issues are usually confined to isolated areas of existing code.
-- [difficulty: medium](https://github.com:Open-Models-Startup/docs-vite/labels/difficulty%3A%20medium): issues sometimes entail new features and might affect a significant area of the codebase, but aren't overly complex.
-- [difficulty: hard](https://github.com:Open-Models-Startup/docs-vite/labels/difficulty%3A%20hard): issues are typically far-reaching, and might need architecture decisions during implementation. This label might also denote highly complex issues.
+- [good first issue](https://github.com:Qi-X-Lab/docs-home/labels/good%20first%20issue): issues are meant for newer developers, new writers, and new editors - or folks just starting out in open source.
+- [difficulty: easy](https://github.com:Qi-X-Lab/docs-home/labels/Difficulty%3A%20easy): issues are usually confined to isolated areas of existing code.
+- [difficulty: medium](https://github.com:Qi-X-Lab/docs-home/labels/difficulty%3A%20medium): issues sometimes entail new features and might affect a significant area of the codebase, but aren't overly complex.
+- [difficulty: hard](https://github.com:Qi-X-Lab/docs-home/labels/difficulty%3A%20hard): issues are typically far-reaching, and might need architecture decisions during implementation. This label might also denote highly complex issues.
 
 **DOMAIN**:
 
-- [writing](https://github.com:Open-Models-Startup/docs-vite/labels/writing): a writing assignment.
-- [editing](https://github.com:Open-Models-Startup/docs-vite/labels/editing): checking for typos, correcting typos, improving style, and so on.
-- [coding](https://github.com:Open-Models-Startup/docs-vite/labels/coding): anything that requires coding skills - from improving the quality of our codebase to making demos.
+- [writing](https://github.com:Qi-X-Lab/docs-home/labels/writing): a writing assignment.
+- [editing](https://github.com:Qi-X-Lab/docs-home/labels/editing): checking for typos, correcting typos, improving style, and so on.
+- [coding](https://github.com:Qi-X-Lab/docs-home/labels/coding): anything that requires coding skills - from improving the quality of our codebase to making demos.
 
 **TYPE**:
 
-- [quick fix](https://github.com:Open-Models-Startup/docs-vite/labels/quick-fix): this should not take longer than 30 minutes.
-- [no-code](https://github.com:Open-Models-Startup/docs-vite/labels/no-code): you don't need to _code_ on this one.
-- [priority](https://github.com:Open-Models-Startup/docs-vite/labels/priority): please choose this one if you can't make a decision.
-- [triage](https://github.com:Open-Models-Startup/docs-vite/labels/triage): this issue hasn't been yet triaged by the OpenModels team so it's not for grabs.
+- [quick fix](https://github.com:Qi-X-Lab/docs-home/labels/quick-fix): this should not take longer than 30 minutes.
+- [no-code](https://github.com:Qi-X-Lab/docs-home/labels/no-code): you don't need to _code_ on this one.
+- [priority](https://github.com:Qi-X-Lab/docs-home/labels/priority): please choose this one if you can't make a decision.
+- [triage](https://github.com:Qi-X-Lab/docs-home/labels/triage): this issue hasn't been yet triaged by the Qi X Lab team so it's not for grabs.
 
 PRs without an associated issue may still be merged, but our docs team will focus on changes that solve existing issues. We strongly encourage creating an issue before working on a PR, unless it's a typo correction.
 

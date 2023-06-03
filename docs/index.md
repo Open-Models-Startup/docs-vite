@@ -1,8 +1,8 @@
 ---
 layout: page
 head:
-  - ['meta', {property: 'og:title', content: 'OpenModels Docs'}]
-  - ['meta', {property: 'og:image', content: 'https://openmodels.wiki/img/theme/docs-social.png'}]
+  - ['meta', {property: 'og:title', content: 'Qi X LAB'}]
+  - ['meta', {property: 'og:image', content: 'https://qixlab.com/img/theme/docs-social.png'}]
 ---
 
 <script setup lang="ts">
