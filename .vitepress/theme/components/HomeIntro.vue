@@ -5,9 +5,9 @@ import BooksIcon from './BooksIcon.vue';
 <template>
   <header>
     <BooksIcon class="icon" />
-    <h1>OpenModels Documentation</h1>
+    <h1>Qi X Lab</h1>
     <p>
-      Welcome to OpenModels, a vibrant community that democratizes AI through accessibility,
+      Welcome to Qi X Lab, a vibrant community that democratizes AI through accessibility,
       innovation, and collaboration. Welcome aboard!
     </p>
   </header>

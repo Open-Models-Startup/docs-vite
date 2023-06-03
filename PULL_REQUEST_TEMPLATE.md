@@ -28,4 +28,4 @@ Would you like your contribution to be celebrated? Please check all that apply:
 
 - [ ] I would like to get a shoutout in the next monthly updates post. If so, please provide your twitter handle (or we will link to your GitHub profile).
 
-⚡️ ⚡️ ⚡️  Thank you for contributing to OpenModels ⚡️ ⚡️ ⚡️
+⚡️ ⚡️ ⚡️  Thank you for contributing to Qi X Lab ⚡️ ⚡️ ⚡️

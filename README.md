@@ -1,18 +1,18 @@
-# OpenModels Docs
+# Qi X LAB
 
-Welcome to the home of the [OpenModels documentation site](https://openmodels.wiki)!
+Welcome to the home of the [Qi X Lab documentation site](https://qixlab.com)!
 
 Our docs site was built with [VitePress](https://vitepress.vuejs.org/) 💙
 
-## What is OpenModels?
+## What is Qi X Lab?
 
-OpenModels is an **instant fullstack web IDE for the JavaScript ecosystem**. It's powered by [iHub](https://blog.openmodels.wiki/posts/introducing-ihub/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
+Qi X Lab is an **instant fullstack web IDE for the JavaScript ecosystem**. It's powered by [PUBLISH](https://blog.qixlab.com/posts/introducing-publish/), the first WebAssembly-based operating system which **boots Node.js environment in milliseconds**, securely within your browser tab.
 
 Now you can use the web to build the web.
 
-In fact, why not edit this docs in iEcho IDE?
+In fact, why not edit this docs in RESEARCH IDE?
 
-<a href="https://openmodels.wiki/~/github.com/Open-Models-Startup/docs-vite"><img style="display:inline" src="https://openmodels.wiki/img/open_in_iecho.svg" alt="Open in iEcho"></a>
+<a href="https://qixlab.com/~/github.com/Qi-X-Lab/docs-home"><img style="display:inline" src="https://qixlab.com/img/open_in_iecho.svg" alt="Open in RESEARCH"></a>
 
 ---
 
@@ -24,13 +24,13 @@ There are numerous ways to contribute to docs:
 
 - **Share feedback**
   - Each docs page features a feedback tool at the bottom - you can use it to let us know what you think!
-  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com:Open-Models-Startup/docs-vite/issues) and if not, feel free to [create one](https://github.com:Open-Models-Startup/docs-vite/issues/new).
+  - If you see something broken or think any section could be better or less confusing please [check if there's an issue for that already](https://github.com:Qi-X-Lab/docs-home/issues) and if not, feel free to [create one](https://github.com:Qi-X-Lab/docs-home/issues/new).
 - **Share ideas**
-  - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com:Open-Models-Startup/docs-vite/discussions).
+  - We want our docs to be delightful. If you have an idea on an improvement, reach out to us on [GitHub discussions](https://github.com:Qi-X-Lab/docs-home/discussions).
 - **Fix typos**
   - Use [Web Publisher](#content-updates-with-web-publisher) for a quick typo fix!
 - **Create demos**
-  - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read our [contributing guide](CONTRIBUTING.md) and reach out to us on [GitHub discussions](https://github.com:Open-Models-Startup/docs-vite/discussions).
+  - We'd like to help our users see our SDK methods in action. Would you like to create a Vanilla JS or TS demo? Before you do, please read our [contributing guide](CONTRIBUTING.md) and reach out to us on [GitHub discussions](https://github.com:Qi-X-Lab/docs-home/discussions).
 - **Fix an issue**
   - You see an issue you'd like to worn on? Ask to be assigned to fix it. Before you start your work, please read our [contributing guide](CONTRIBUTING.md).
 - **Reviews**
@@ -71,23 +71,23 @@ If what you want to say doesn't really fall into actionable "problem" or "improv
 There are three ways to interact with this repository:
 
 - For **a small content update**, you can use [Web Publisher](#content-updates-with-web-publisher).
-- If you want **to explore and develop** this site, use [OpenModels iEcho](#developing-with-openmodels-iecho).
+- If you want **to explore and develop** this site, use [Qi X Lab RESEARCH](#developing-with-qixlab-research).
 - Alternatively, you can [run the docs locally](#developing-locally).
 
 ### Content updates with Web Publisher
 
 Use Web Publisher for small content updates for a pleasant editing experience:
 
-1. Open the page on our [docs site](developer.openmodels.wiki), scroll down, and click "edit this page".
+1. Open the page on our [docs site](developer.qixlab.com), scroll down, and click "edit this page".
 2. Update the document in the editor on the left and see the rendered change in the preview window on the right.
 3. Once you're done, in the top right corner click on the green button that says "Propose changes".
 4. You will be redirected to a GitHub PR template page prepared for you to submit a PR.
 
-### Developing with OpenModels iEcho
+### Developing with Qi X Lab RESEARCH
 
-Use OpenModels iEcho for bigger content updates. iEcho will spin up the entire dev environment with a running dev server. When using iEcho, please remember to commit and push your changes frequently.
+Use Qi X Lab RESEARCH for bigger content updates. RESEARCH will spin up the entire dev environment with a running dev server. When using RESEARCH, please remember to commit and push your changes frequently.
 
-To access it, [click this button](https://openmodels.wiki/~/github.com/Open-Models-Startup/docs-vite).
+To access it, [click this button](https://qixlab.com/~/github.com/Qi-X-Lab/docs-home).
 
 Alternatively, add “pr.new” to the beginning of this GitHub repo URL.
 
@@ -127,8 +127,8 @@ VITE_GTM_ID='******'
 
 ## Join our community
 
-- [Participate in a discussion](https://github.com:Open-Models-Startup/docs-vite/discussions)
+- [Participate in a discussion](https://github.com:Qi-X-Lab/docs-home/discussions)
 - [Join our Discord](https://discord.gg/EQ7uJQxC)
-- Read our [blog](https://blog.openmodels.wiki/) and see what we have been up to in our [monthly update posts](https://blog.openmodels.wiki/categories/monthly-updates/)!
-- Share your OpenModels projects on [Twitter](https://twitter.com/OpenModels)!
-- Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@openmodels.wiki) with your OpenModels ideas, dreams, and wishes!
+- Read our [blog](https://blog.qixlab.com/) and see what we have been up to in our [monthly update posts](https://blog.qixlab.com/categories/monthly-updates/)!
+- Share your Qi X Lab projects on [Twitter](<https://twitter.com/Qi> X Lab)!
+- Reach out to our Developer Advocate on [Twitter](https://twitter.com/sylwiavargas) or via [an email](mailto:devrel@qixlab.com) with your Qi X Lab ideas, dreams, and wishes!

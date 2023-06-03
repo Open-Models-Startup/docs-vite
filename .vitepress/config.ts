@@ -18,34 +18,34 @@ export default defineConfig({
 
     // Metadata
     lang: 'en-US',
-    title: 'OpenModels Docs',
+    title: 'Qi X LAB',
     description:
-        "Welcome to OpenModels, a vibrant community that democratizes AI through accessibility, innovation, and collaboration. Welcome aboard!",
+        "Welcome to Qi X Lab, a vibrant community that democratizes AI through accessibility, innovation, and collaboration. Welcome aboard!",
     head: getHeadTags(process.env),
 
     // Theme
     themeConfig: {
-        siteTitle: 'OpenModels Docs',
+        siteTitle: 'Qi X LAB',
         logo: '/img/theme/docs-logo.svg',
         algolia: getAlgoliaConfig(process.env),
         editLink: {
-            pattern: 'https://pr.new/Open-Models-Startup/docs-vite/edit/main/docs/:path',
+            pattern: 'https://pr.new/Qi-X-Lab/docs-home/edit/main/docs/:path',
             text: 'Edit this page',
         },
         nav: [
-            { text: 'Guides', link: defaultGroupLink('userGuide') },
-            { text: 'iEcho', link: defaultGroupLink('iecho') },
-            { text: 'iHub', link: defaultGroupLink('ihub') },
-            { text: 'iCreate', link: defaultGroupLink('icreate') }, { text: 'API', link: defaultGroupLink('api') },
-            { text: 'Enterprise', link: defaultGroupLink('enterprise') },
+            { text: 'HOME', link: defaultGroupLink('userGuide') },
+            { text: 'RESEARCH', link: defaultGroupLink('research') },
+            { text: 'PUBLISH', link: defaultGroupLink('publish') },
+            { text: 'NEWSROOM', link: defaultGroupLink('newsroom') }, { text: 'CAREER', link: defaultGroupLink('career') },
+            { text: 'COOPERATIONS', link: defaultGroupLink('cooperations') },
         ],
         sidebar: {
-            '/guides/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
-            '/iecho/': sidebarLinks('main', ['iecho']),
+            '/home/': sidebarLinks('main', ['userGuide', 'integrationGuide']),
+            '/research/': sidebarLinks('main', ['research']),
             '/platform/api/': sidebarLinks('main', ['api']),
-            '/platform/ihub/': sidebarLinks('main', ['ihub']),
-            '/platform/icreate/': sidebarLinks('main', ['icreate']),
-            '/enterprise/': sidebarLinks('enterprise', ['enterprise']),
+            '/platform/publish/': sidebarLinks('main', ['publish']),
+            '/platform/newsroom/': sidebarLinks('main', ['newsroom']),
+            '/cooperations/': sidebarLinks('cooperations', ['cooperations']),
         },
     },
 
@@ -61,8 +61,8 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
         ['link', { rel: 'icon', type: 'image/png', href: '/img/theme/favicon.png' }],
         ['meta', { property: 'og:type', content: 'website' }],
         ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-        ['meta', { name: 'twitter:title', content: 'OpenModels Docs' }],
-        ['meta', { name: 'twitter:site', content: '@OpenModels' }],
+        ['meta', { name: 'twitter:title', content: 'Qi X LAB' }],
+        ['meta', { name: 'twitter:site', content: '@Qi X Lab' }],
     ];
 
     if (env.VITE_GTM_ID) {
@@ -83,7 +83,7 @@ function getHeadTags(env: NodeJS.ProcessEnv): HeadConfig[] {
 function getAlgoliaConfig(env: NodeJS.ProcessEnv) {
     if (env.VITE_ALGOLIA_ID && env.VITE_ALGOLIA_KEY) {
         return {
-            indexName: 'OpenModels',
+            indexName: 'Qi X Lab',
             appId: env.VITE_ALGOLIA_ID,
             apiKey: env.VITE_ALGOLIA_KEY,
         };

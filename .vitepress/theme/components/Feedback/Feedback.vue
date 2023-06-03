@@ -51,7 +51,7 @@ function submitForm() {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: encode({
-      'form-name': 'OpenModels-doc-feedback',
+      'form-name': 'Qi X Lab-doc-feedback',
       page: route.path,
       wasHelpful: currentState.value,
       feedback: feedback.value,
