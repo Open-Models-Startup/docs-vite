@@ -163,7 +163,7 @@ export const homeTopLinks = [
     },
     {
         icon: '/icons/fa-brackets-curly.svg',
-        title: 'API Reference',
+        title: 'CAREER Opportunity',
         description:
             'Embed GitHub repos, create new projects, build educational experiences, all programmatically with our SDK.',
         url: '/platform/api/javascript-sdk',
