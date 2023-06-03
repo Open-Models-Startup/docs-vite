@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import CardGrid from 'CardGrid.vue';
-import Footer from 'Footer.vue';
-import HomeIntro from 'HomeIntro.vue';
+import CardGrid from './CardGrid.vue';
+import Footer from './Footer.vue';
+import HomeIntro from './HomeIntro.vue';
 
 defineProps<{
   topLinks: any[];
