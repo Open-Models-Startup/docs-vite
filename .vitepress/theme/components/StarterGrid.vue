@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import StarterLink from './StarterLink.vue';
+import StarterLink from 'StarterLink.vue';
 
 defineProps<{ links: any[] }>();
 </script>
